@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Join Autism Club AI Creator Coding program! A comprehensive web, game, and app development course using AI-powered coding tools like Claude AI for youth and adults in Surrey, BC.">
+  <meta name="author" content="Autism Club">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <link rel="canonical" href="https://www.autismclubcanada.com/ai-creator-coding.html">
+  <link rel="icon" type="image/png" href="assets/images/autism-club-logo.png">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#1B1464">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="AI Creator Coding - Autism Club">
+  <meta property="og:description" content="Join Autism Club AI Creator Coding program! A comprehensive web, game, and app development course using AI-powered coding tools like Claude AI for youth and adults in Surrey, BC.">
+  <meta property="og:url" content="https://www.autismclubcanada.com/ai-creator-coding.html">
+  <meta property="og:image" content="https://www.autismclubcanada.com/assets/images/autism-club-logo.png">
+  <meta property="og:site_name" content="Autism Club Canada">
+  <meta property="og:locale" content="en_CA">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="AI Creator Coding - Autism Club">
+  <meta name="twitter:description" content="Join Autism Club AI Creator Coding program! A comprehensive web, game, and app development course using AI-powered coding tools like Claude AI for youth and adults in Surrey, BC.">
+  <meta name="twitter:image" content="https://www.autismclubcanada.com/assets/images/autism-club-logo.png">
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "Course",
+  "name": "AI Creator Coding",
+  "description": "Comprehensive web, game, and app development course using AI-powered coding tools like Claude AI.",
+  "provider": {
+    "@type": "Organization",
+    "name": "Autism Club Canada",
+    "url": "https://www.autismclubcanada.com"
+  },
+  "educationalLevel": "Beginner to Intermediate",
+  "inLanguage": "en",
+  "isAccessibleForFree": false,
+  "locationCreated": {
+    "@type": "Place",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "#204B 10190 152A St",
+      "addressLocality": "Surrey",
+      "addressRegion": "BC",
+      "postalCode": "V3R 1J7",
+      "addressCountry": "CA"
+    }
+  }
+}
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <title>AI Creator Coding - Autism Club</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    :root {
+      --primary: #1B1464;
+      --primary-light: #2D2B8E;
+      --accent-cyan: #00D4FF;
+      --accent-blue: #7DCDF4;
+      --cta-orange: #FFB200;
+      --cta-orange-hover: #E5A000;
+      --mint: #ACF0D1;
+      --pink: #FF83AE;
+      --text-dark: #1F1F1F;
+      --text-gray: #555;
+      --text-light: #777;
+      --bg-light: #F4F7FB;
+      --bg-white: #ffffff;
+      --card-shadow: 0 8px 30px rgba(27, 20, 100, 0.08);
+      --card-shadow-hover: 0 16px 40px rgba(27, 20, 100, 0.15);
+      --radius-sm: 12px;
+      --radius-md: 20px;
+      --radius-lg: 30px;
+      --radius-pill: 50px;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      color: var(--text-dark);
+      line-height: 1.7;
+      overflow-x: hidden;
+      background: var(--bg-white);
+    }
+
+    /* ============================================
+       HEADER
+    ============================================ */
+    .site-header { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; background: var(--bg-white); border-bottom: 4px solid var(--accent-cyan); transition: box-shadow 0.3s ease; }
+    .site-header.scrolled { box-shadow: 0 2px 20px rgba(0,0,0,0.08); }
+    .header-inner { max-width: 1310px; margin: 0 auto; padding: 0 24px; display: flex; align-items: center; justify-content: space-between; height: 110px; }
+    .header-logo img { height: 130px; transition: transform 0.3s; }
+    .header-logo img:hover { transform: scale(1.03); }
+    .nav-links { display: flex; align-items: center; gap: 8px; list-style: none; margin: 0; padding: 0; }
+    .nav-links > li { position: relative; }
+    .nav-links > li > a { display: inline-block; padding: 8px 16px; color: var(--text-dark); text-decoration: none; font-weight: 500; font-size: 15px; border-radius: var(--radius-sm); transition: all 0.3s; }
+    .nav-links > li > a:hover { background: var(--bg-light); color: var(--primary); }
+    .nav-links .dropdown-menu-custom { display: none; position: absolute; top: 100%; left: 0; background: var(--bg-white); border-radius: var(--radius-sm); box-shadow: var(--card-shadow-hover); min-width: 240px; padding: 8px 0; z-index: 999; }
+    .nav-links li:hover .dropdown-menu-custom { display: block; }
+    .dropdown-menu-custom a { display: block; padding: 10px 20px; color: var(--text-dark); text-decoration: none; font-size: 14px; font-weight: 400; transition: all 0.2s; }
+    .dropdown-menu-custom a:hover { background: var(--bg-light); color: var(--primary); padding-left: 24px; }
+    .nav-social { display: flex; align-items: center; gap: 12px; margin-left: 8px; }
+    .nav-social a { display: flex; align-items: center; justify-content: center; width: 36px; height: 36px; border-radius: 50%; background: var(--bg-light); color: var(--primary); text-decoration: none; transition: all 0.3s; font-size: 14px; }
+    .nav-social a:hover { background: var(--primary); color: #fff; }
+    .lang-selector { position: relative; }
+    .lang-btn { display: flex; align-items: center; justify-content: center; width: 36px; height: 36px; border-radius: 50%; background: var(--bg-light); color: var(--primary); border: none; cursor: pointer; transition: all 0.3s; font-size: 12px; font-weight: 700; font-family: 'Be Vietnam Pro', sans-serif; letter-spacing: -0.5px; padding: 0; }
+    .lang-btn .globe-icon { display: none; }
+    .lang-btn:hover, .lang-btn.active { background: var(--primary); color: #fff; }
+    .lang-dropdown { display: none; position: absolute; top: calc(100% + 8px); right: 0; background: var(--bg-white); border-radius: var(--radius-sm); box-shadow: var(--card-shadow-hover); min-width: 180px; padding: 8px 0; z-index: 1001; }
+    .lang-dropdown.open { display: block; }
+    .lang-option { display: flex; align-items: center; gap: 10px; padding: 10px 20px; color: var(--text-dark); text-decoration: none; font-size: 14px; font-weight: 400; transition: all 0.2s; white-space: nowrap; }
+    .lang-option:hover { background: var(--bg-light); color: var(--primary); padding-left: 24px; }
+    .lang-option.active { color: var(--primary); font-weight: 600; background: rgba(27, 20, 100, 0.04); }
+    .lang-flag { font-size: 18px; line-height: 1; }
+    .mobile-lang-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+    .mobile-lang-option { display: block; padding: 10px 14px; background: var(--bg-light); border-radius: var(--radius-sm); color: var(--text-dark); text-decoration: none; font-size: 14px; font-weight: 500; text-align: center; transition: all 0.2s; border: 2px solid transparent; }
+    .mobile-lang-option:hover { border-color: var(--primary); color: var(--primary); }
+    .mobile-lang-option.active { background: var(--primary); color: #fff; font-weight: 600; }
+    .goog-te-banner-frame, .skiptranslate, #goog-gt-tt, .goog-te-balloon-frame { display: none !important; }
+    body { top: 0 !important; }
+    .btn-cta { display: inline-block; padding: 12px 28px; background: var(--cta-orange); color: var(--text-dark); font-weight: 700; font-size: 14px; text-decoration: none; border-radius: var(--radius-pill); border: none; cursor: pointer; transition: all 0.3s; letter-spacing: 0.5px; text-transform: uppercase; }
+    .btn-cta:hover { background: var(--cta-orange-hover); transform: translateY(-2px); box-shadow: 0 6px 20px rgba(255, 178, 0, 0.35); color: var(--text-dark); }
+    .btn-cta-outline { display: inline-block; padding: 12px 28px; background: transparent; color: var(--primary); font-weight: 700; font-size: 14px; text-decoration: none; border-radius: var(--radius-pill); border: 2px solid var(--primary); cursor: pointer; transition: all 0.3s; letter-spacing: 0.5px; }
+    .btn-cta-outline:hover { background: var(--primary); color: #fff; transform: translateY(-2px); }
+    .hamburger { display: none; background: var(--primary); border: none; width: 44px; height: 44px; border-radius: 50%; color: #fff; font-size: 18px; cursor: pointer; transition: all 0.3s; }
+    .hamburger:hover { background: var(--primary-light); }
+
+    /* ============================================
+       PAGE BANNER
+    ============================================ */
+    .page-banner { padding: 160px 0 60px; background: linear-gradient(135deg, #F4F7FB 0%, #E8F4FD 50%, #F0E6FF 100%); text-align: center; position: relative; overflow: hidden; }
+    .page-banner::before { content: ''; position: absolute; top: -50%; right: -20%; width: 600px; height: 600px; border-radius: 50%; background: radial-gradient(circle, rgba(0,212,255,0.08) 0%, transparent 70%); }
+    .page-banner .tag { display: inline-block; padding: 5px 14px; background: rgba(27,20,100,0.06); color: var(--primary); font-size: 12px; font-weight: 700; border-radius: var(--radius-pill); margin-bottom: 14px; text-transform: uppercase; letter-spacing: 1.5px; }
+    .page-banner h1 { font-size: 42px; font-weight: 800; color: var(--text-dark); margin-bottom: 16px; }
+    .page-banner h1 .accent { color: var(--primary); }
+    .page-banner p { font-size: 17px; color: var(--text-gray); max-width: 650px; margin: 0 auto; }
+
+    /* ============================================
+       CLUB CONTENT SECTION
+    ============================================ */
+    .club-content { padding: 80px 0; }
+    .club-content:nth-child(even) { background: var(--bg-light); }
+    .club-video-wrap { border-radius: var(--radius-lg); overflow: hidden; box-shadow: 0 20px 50px rgba(27,20,100,0.1); }
+    .club-video-wrap video { width: 100%; display: block; }
+    .club-info h3 { font-size: 28px; font-weight: 800; margin-bottom: 16px; color: var(--text-dark); }
+    .club-info h3 .accent { color: var(--primary); }
+    .club-info > p { font-size: 15px; color: var(--text-gray); line-height: 1.8; margin-bottom: 20px; }
+    .club-meta { background: var(--bg-light); border-radius: var(--radius-sm); padding: 24px; }
+    .club-meta-item { display: flex; align-items: flex-start; gap: 12px; padding: 14px 0; border-bottom: 1px solid #e8e8e8; }
+    .club-meta-item:last-child { border-bottom: none; }
+    .club-meta-item .icon { width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 16px; }
+    .club-meta-item .icon.blue { background: rgba(0,212,255,0.12); color: var(--accent-cyan); }
+    .club-meta-item .icon.purple { background: rgba(79,61,217,0.1); color: #4F3DD9; }
+    .club-meta-item .icon.orange { background: rgba(255,178,0,0.12); color: var(--cta-orange); }
+    .club-meta-item .icon.green { background: rgba(45,184,122,0.12); color: #2DB87A; }
+    .club-meta-item .icon.pink { background: rgba(255,131,174,0.15); color: var(--pink); }
+    .club-meta-item .label { font-weight: 700; font-size: 14px; color: var(--primary); margin-bottom: 4px; }
+    .club-meta-item .value { font-size: 14px; color: var(--text-gray); line-height: 1.6; }
+
+    /* ============================================
+       CURRICULUM SECTION
+    ============================================ */
+    .curriculum-section { padding: 80px 0; background: var(--bg-light); }
+    .semester-card {
+      background: var(--bg-white);
+      border-radius: var(--radius-lg);
+      padding: 40px;
+      box-shadow: var(--card-shadow);
+      margin-bottom: 30px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .semester-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--card-shadow-hover);
+    }
+    .semester-badge {
+      display: inline-block;
+      padding: 6px 16px;
+      border-radius: var(--radius-pill);
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 16px;
+    }
+    .semester-badge.s1 { background: rgba(0,212,255,0.12); color: #0095B3; }
+    .semester-badge.s2 { background: rgba(255,178,0,0.12); color: #C48900; }
+    .semester-badge.s3 { background: rgba(79,61,217,0.1); color: #4F3DD9; }
+    .semester-card h4 { font-size: 22px; font-weight: 800; margin-bottom: 8px; color: var(--text-dark); }
+    .semester-card .semester-desc { font-size: 15px; color: var(--text-gray); margin-bottom: 24px; }
+
+    .curriculum-table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0;
+      border-radius: var(--radius-sm);
+      overflow: hidden;
+    }
+    .curriculum-table thead th {
+      background: var(--primary);
+      color: #fff;
+      padding: 12px 16px;
+      font-size: 13px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .curriculum-table tbody td {
+      padding: 12px 16px;
+      font-size: 14px;
+      color: var(--text-gray);
+      border-bottom: 1px solid #eee;
+      vertical-align: top;
+    }
+    .curriculum-table tbody tr:last-child td { border-bottom: none; }
+    .curriculum-table tbody tr:hover { background: rgba(0,212,255,0.03); }
+
+    .area-badge {
+      display: inline-block;
+      padding: 3px 10px;
+      border-radius: var(--radius-pill);
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    .area-badge.web { background: rgba(0,212,255,0.12); color: #0095B3; }
+    .area-badge.game { background: rgba(255,178,0,0.12); color: #C48900; }
+    .area-badge.app { background: rgba(79,61,217,0.1); color: #4F3DD9; }
+
+    /* ============================================
+       CLASS STRUCTURE
+    ============================================ */
+    .class-structure { padding: 80px 0; }
+    .structure-card {
+      background: var(--bg-white);
+      border-radius: var(--radius-lg);
+      padding: 40px;
+      box-shadow: var(--card-shadow);
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    .structure-card h3 { font-size: 24px; font-weight: 800; margin-bottom: 30px; text-align: center; }
+    .structure-item {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding: 16px 0;
+      border-bottom: 1px solid #eee;
+    }
+    .structure-item:last-child { border-bottom: none; }
+    .structure-time {
+      min-width: 70px;
+      padding: 6px 14px;
+      border-radius: var(--radius-pill);
+      background: var(--bg-light);
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--primary);
+      text-align: center;
+      white-space: nowrap;
+    }
+    .structure-label { font-size: 15px; color: var(--text-gray); }
+
+    /* ============================================
+       CTA SECTION
+    ============================================ */
+    .cta-section { background: var(--bg-light); padding: 80px 0; }
+    .cta-card { background: var(--bg-white); border-radius: var(--radius-lg); padding: 50px; box-shadow: var(--card-shadow); text-align: center; max-width: 800px; margin: 0 auto; }
+    .cta-card h2 { font-size: 32px; font-weight: 800; margin-bottom: 10px; }
+    .cta-card .subtitle { font-size: 17px; color: var(--text-gray); margin-bottom: 30px; }
+    .contact-info-row { display: flex; justify-content: center; gap: 40px; flex-wrap: wrap; margin-bottom: 30px; }
+    .contact-info-item { display: flex; align-items: center; gap: 10px; font-size: 15px; color: var(--text-gray); }
+    .contact-info-item i { width: 40px; height: 40px; border-radius: 50%; background: var(--bg-light); display: flex; align-items: center; justify-content: center; color: var(--primary); font-size: 16px; }
+
+    /* ============================================
+       FOOTER
+    ============================================ */
+    .site-footer { background: var(--primary); color: rgba(255,255,255,0.8); padding: 60px 0 30px; }
+    .footer-col h5 { font-size: 16px; font-weight: 700; color: #fff; margin-bottom: 20px; }
+    .footer-col p { font-size: 14px; line-height: 1.8; color: rgba(255,255,255,0.65); }
+    .footer-links { list-style: none; padding: 0; margin: 0; }
+    .footer-links li { margin-bottom: 10px; }
+    .footer-links a { color: rgba(255,255,255,0.65); text-decoration: none; font-size: 14px; transition: all 0.3s; }
+    .footer-links a:hover { color: var(--accent-cyan); padding-left: 4px; }
+    .footer-social { display: flex; gap: 12px; margin-top: 16px; }
+    .footer-social a { display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 50%; background: rgba(255,255,255,0.1); color: #fff; text-decoration: none; transition: all 0.3s; }
+    .footer-social a:hover { background: var(--accent-cyan); color: var(--primary); }
+    .footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); margin-top: 40px; padding-top: 20px; text-align: center; font-size: 13px; color: rgba(255,255,255,0.45); }
+
+    /* ============================================
+       MOBILE NAV
+    ============================================ */
+    .mobile-nav {
+      display: none;
+      position: fixed;
+      top: 80px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: var(--bg-white);
+      z-index: 999;
+      overflow-y: auto;
+      padding: 24px;
+    }
+    @media (max-width: 991px) {
+      .nav-links, .nav-social, .header-right-desktop, .lang-selector { display: none !important; }
+      .hamburger { display: flex; align-items: center; justify-content: center; }
+      .mobile-nav.active { display: block; }
+      .mobile-nav a { display: block; padding: 14px 0; color: var(--text-dark); text-decoration: none; font-size: 16px; font-weight: 500; border-bottom: 1px solid #eee; }
+      .mobile-nav a:hover { color: var(--primary); }
+      .mobile-nav .sub-links { padding-left: 20px; }
+      .mobile-nav .sub-links a { font-size: 14px; font-weight: 400; color: var(--text-gray); }
+      .page-banner { padding: 130px 0 40px; }
+      .page-banner h1 { font-size: 28px; }
+      .cta-card { padding: 30px 20px; }
+      .semester-card { padding: 24px 16px; }
+      .contact-info-row { flex-direction: column; align-items: center; gap: 16px; }
+      .curriculum-table { font-size: 12px; }
+      .curriculum-table thead th, .curriculum-table tbody td { padding: 8px 10px; }
+    }
+    @media (max-width: 576px) {
+      .page-banner h1 { font-size: 24px; }
+      .structure-card { padding: 24px 16px; }
+    }
+
+    /* ============================================
+       ANIMATIONS
+    ============================================ */
+    .fade-up { opacity: 0; transform: translateY(30px); transition: opacity 0.6s ease, transform 0.6s ease; }
+    .fade-up.visible { opacity: 1; transform: translateY(0); }
+  </style>
+</head>
+<body>
+
+  <!-- ==========================================
+       HEADER
+  ========================================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner">
+      <a href="index.html" class="header-logo">
+        <img src="assets/images/autism-club-logo.png" alt="Autism Club Logo" width="180" height="60">
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li>
+          <a href="index.html#programs" data-nav-tab="kids">Kids <i class="fas fa-chevron-down" style="font-size:10px;margin-left:4px;"></i></a>
+          <div class="dropdown-menu-custom">
+            <a href="lego-club.html"><i class="fas fa-puzzle-piece" style="margin-right:8px;color:var(--cta-orange);"></i> Lego Club</a>
+            <a href="reading-and-writing-club.html"><i class="fas fa-book-open" style="margin-right:8px;color:var(--pink);"></i> Reading & Writing Club</a>
+            <a href="animation-digital-drawing-club.html"><i class="fas fa-pen-nib" style="margin-right:8px;color:#4F3DD9;"></i> Animation Drawing Club</a>
+            <a href="music-club.html"><i class="fas fa-music" style="margin-right:8px;color:var(--cta-orange);"></i> Music Club</a>
+            <a href="golf-club.html"><i class="fas fa-golf-ball" style="margin-right:8px;color:#2DB87A;"></i> Golf Club</a>
+            <a href="running-club.html"><i class="fas fa-running" style="margin-right:8px;color:var(--accent-cyan);"></i> Running Club</a>
+          </div>
+        </li>
+        <li>
+          <a href="index.html#programs" data-nav-tab="youth">Youth <i class="fas fa-chevron-down" style="font-size:10px;margin-left:4px;"></i></a>
+          <div class="dropdown-menu-custom">
+            <a href="lego-spike-club.html"><i class="fas fa-microchip" style="margin-right:8px;color:var(--cta-orange);"></i> Lego Spike Club</a>
+            <a href="robot-coding-club.html"><i class="fas fa-robot" style="margin-right:8px;color:var(--accent-cyan);"></i> Robot Coding Club</a>
+            <a href="reading-and-writing-club.html"><i class="fas fa-book-open" style="margin-right:8px;color:var(--pink);"></i> Reading & Writing Club</a>
+            <a href="media-arts-club.html"><i class="fas fa-palette" style="margin-right:8px;color:#FF6B35;"></i> Media Arts Club</a>
+            <a href="animation-digital-drawing-club.html"><i class="fas fa-pen-nib" style="margin-right:8px;color:#4F3DD9;"></i> Animation Drawing Club</a>
+            <a href="roblox-game-development-club.html"><i class="fas fa-gamepad" style="margin-right:8px;color:var(--mint);"></i> Roblox Game Dev Club</a>
+            <a href="ai-creator-coding.html"><i class="fas fa-code" style="margin-right:8px;color:var(--accent-cyan);"></i> AI Creator Coding</a>
+            <a href="music-club.html"><i class="fas fa-music" style="margin-right:8px;color:var(--cta-orange);"></i> Music Club</a>
+            <a href="golf-club.html"><i class="fas fa-golf-ball" style="margin-right:8px;color:#2DB87A;"></i> Golf Club</a>
+            <a href="running-club.html"><i class="fas fa-running" style="margin-right:8px;color:var(--accent-cyan);"></i> Running Club</a>
+          </div>
+        </li>
+        <li>
+          <a href="index.html#programs" data-nav-tab="adult">Adult <i class="fas fa-chevron-down" style="font-size:10px;margin-left:4px;"></i></a>
+          <div class="dropdown-menu-custom">
+            <a href="robot-coding-club.html"><i class="fas fa-robot" style="margin-right:8px;color:var(--accent-cyan);"></i> Robot Coding Club</a>
+            <a href="reading-and-writing-club.html"><i class="fas fa-book-open" style="margin-right:8px;color:var(--pink);"></i> Reading & Writing Club</a>
+            <a href="media-arts-club.html"><i class="fas fa-palette" style="margin-right:8px;color:#FF6B35;"></i> Media Arts Club</a>
+            <a href="animation-digital-drawing-club.html"><i class="fas fa-pen-nib" style="margin-right:8px;color:#4F3DD9;"></i> Animation Drawing Club</a>
+            <a href="roblox-game-development-club.html"><i class="fas fa-gamepad" style="margin-right:8px;color:var(--mint);"></i> Roblox Game Dev Club</a>
+            <a href="ai-creator-coding.html"><i class="fas fa-code" style="margin-right:8px;color:var(--accent-cyan);"></i> AI Creator Coding</a>
+            <a href="music-club.html"><i class="fas fa-music" style="margin-right:8px;color:var(--cta-orange);"></i> Music Club</a>
+            <a href="golf-club.html"><i class="fas fa-golf-ball" style="margin-right:8px;color:#2DB87A;"></i> Golf Club</a>
+            <a href="running-club.html"><i class="fas fa-running" style="margin-right:8px;color:var(--accent-cyan);"></i> Running Club</a>
+          </div>
+        </li>
+        <li><a href="event.html">Events</a></li>
+        <li><a href="about-us.html">About Us</a></li>
+        <li><a href="afu-funding.html">AFU Funding</a></li>
+      </ul>
+
+      <div class="header-right-desktop" style="display:flex;align-items:center;gap:12px;">
+                <div class="lang-selector">
+          <button class="lang-btn" id="langToggle" aria-label="Select Language" aria-expanded="false">
+            <span id="currentLangText">EN</span>
+          </button>
+          <div class="lang-dropdown" id="langDropdown">
+            <a href="#" data-lang="en" class="lang-option active"><span class="lang-flag">🇺🇸</span> English</a>
+            <a href="#" data-lang="ko" class="lang-option"><span class="lang-flag">🇰🇷</span> 한국어</a>
+            <a href="#" data-lang="zh-CN" class="lang-option"><span class="lang-flag">🇨🇳</span> 中文</a>
+            <a href="#" data-lang="hi" class="lang-option"><span class="lang-flag">🇮🇳</span> हिन्दी</a>
+            <a href="#" data-lang="es" class="lang-option"><span class="lang-flag">🇪🇸</span> Español</a>
+            <a href="#" data-lang="fr" class="lang-option"><span class="lang-flag">🇫🇷</span> Français</a>
+            <a href="#" data-lang="ja" class="lang-option"><span class="lang-flag">🇯🇵</span> 日本語</a>
+          </div>
+        </div>
+<div class="nav-social">
+          <a href="https://www.facebook.com/profile.php?id=61574664762256" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/autismclubcanada/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+        </div>
+        <a href="register.html" class="btn-cta">Register Now</a>
+      </div>
+
+      <button class="hamburger" id="hamburgerBtn"><i class="fas fa-bars"></i></button>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation -->
+  <nav class="mobile-nav" id="mobileNav">
+    <a href="index.html"><strong>Home</strong></a>
+    <a href="index.html#programs" data-nav-tab="kids"><strong>Kids</strong></a>
+    <div class="sub-links">
+      <a href="lego-club.html">Lego Club</a>
+      <a href="reading-and-writing-club.html">Reading & Writing Club</a>
+      <a href="animation-digital-drawing-club.html">Animation Drawing Club</a>
+      <a href="music-club.html">Music Club</a>
+      <a href="golf-club.html">Golf Club</a>
+      <a href="running-club.html">Running Club</a>
+    </div>
+    <a href="index.html#programs" data-nav-tab="youth"><strong>Youth</strong></a>
+    <div class="sub-links">
+      <a href="lego-spike-club.html">Lego Spike Club</a>
+      <a href="robot-coding-club.html">Robot Coding Club</a>
+      <a href="reading-and-writing-club.html">Reading & Writing Club</a>
+      <a href="media-arts-club.html">Media Arts Club</a>
+      <a href="animation-digital-drawing-club.html">Animation Drawing Club</a>
+      <a href="roblox-game-development-club.html">Roblox Game Dev Club</a>
+      <a href="ai-creator-coding.html">AI Creator Coding</a>
+      <a href="music-club.html">Music Club</a>
+      <a href="golf-club.html">Golf Club</a>
+      <a href="running-club.html">Running Club</a>
+    </div>
+    <a href="index.html#programs" data-nav-tab="adult"><strong>Adult</strong></a>
+    <div class="sub-links">
+      <a href="robot-coding-club.html">Robot Coding Club</a>
+      <a href="reading-and-writing-club.html">Reading & Writing Club</a>
+      <a href="media-arts-club.html">Media Arts Club</a>
+      <a href="animation-digital-drawing-club.html">Animation Drawing Club</a>
+      <a href="roblox-game-development-club.html">Roblox Game Dev Club</a>
+      <a href="ai-creator-coding.html">AI Creator Coding</a>
+      <a href="music-club.html">Music Club</a>
+      <a href="golf-club.html">Golf Club</a>
+      <a href="running-club.html">Running Club</a>
+    </div>
+    <a href="event.html"><strong>Events</strong></a>
+    <a href="about-us.html"><strong>About Us</strong></a>
+    <a href="afu-funding.html"><strong>AFU Funding</strong></a>
+        <div class="mobile-lang-selector" style="margin-top:16px;padding-top:16px;border-top:1px solid #eee;">
+      <strong style="display:block;margin-bottom:10px;font-size:14px;color:var(--primary);">
+        <i class="fas fa-globe" style="margin-right:6px;"></i> Language
+      </strong>
+      <div class="mobile-lang-grid">
+        <a href="#" data-lang="en" class="mobile-lang-option active">English</a>
+        <a href="#" data-lang="ko" class="mobile-lang-option">한국어</a>
+        <a href="#" data-lang="zh-CN" class="mobile-lang-option">中文</a>
+        <a href="#" data-lang="hi" class="mobile-lang-option">हिन्दी</a>
+        <a href="#" data-lang="es" class="mobile-lang-option">Español</a>
+        <a href="#" data-lang="fr" class="mobile-lang-option">Français</a>
+        <a href="#" data-lang="ja" class="mobile-lang-option">日本語</a>
+      </div>
+    </div>
+<div style="margin-top:20px;">
+      <a href="register.html" class="btn-cta" style="display:block;text-align:center;">Register Now</a>
+    </div>
+  </nav>
+
+  <!-- ==========================================
+       PAGE BANNER
+  ========================================== -->
+  <section class="page-banner">
+    <div class="container">
+      <span class="tag">AI & CODING</span>
+      <h1>AI Creator <span class="accent">Coding</span></h1>
+      <p>A 9-month integrated program where students build websites, games, and apps using Claude AI &mdash; designed for ages 11-18.</p>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       CLUB CONTENT
+  ========================================== -->
+  <section class="club-content">
+    <div class="container">
+      <div class="row align-items-start g-5">
+        <div class="col-lg-6 fade-up">
+          <div class="club-video-wrap">
+            <video controls playsinline>
+              <source src="assets/videos/media-creator-club-video.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+        <div class="col-lg-6 fade-up">
+          <div class="club-info">
+            <h3>About the <span class="accent">Program</span></h3>
+            <p>AI Creator Coding is a hands-on project-based course where students use Claude AI to plan, design, and build real digital products. Over 9 months, participants progress through web development, game development, and app development &mdash; completing their own projects at each stage.</p>
+            <p>This program goes beyond simply asking AI questions. Students learn to leverage AI as a creative coding partner, developing practical skills in HTML, CSS, JavaScript, game logic, and app design while building a portfolio of original work.</p>
+
+            <div class="club-meta">
+              <div class="club-meta-item">
+                <div class="icon blue"><i class="fas fa-users"></i></div>
+                <div>
+                  <div class="label">Ages</div>
+                  <div class="value">Over 18 years old</div>
+                </div>
+              </div>
+              <div class="club-meta-item">
+                <div class="icon purple"><i class="fas fa-calendar-alt"></i></div>
+                <div>
+                  <div class="label">Duration</div>
+                  <div class="value">9 months (3 semesters &times; 3 months)<br>12 classes per semester &middot; 36 total classes</div>
+                </div>
+              </div>
+              <div class="club-meta-item">
+                <div class="icon orange"><i class="fas fa-clock"></i></div>
+                <div>
+                  <div class="label">Schedule</div>
+                  <div class="value">Once per week &middot; 2 hours per session<br>Available: 3:30-5:30 PM or 5:30-7:30 PM</div>
+                </div>
+              </div>
+              <div class="club-meta-item">
+                <div class="icon green"><i class="fas fa-laptop-code"></i></div>
+                <div>
+                  <div class="label">Structure</div>
+                  <div class="value">Each semester: Web Dev (4 classes) &rarr; Game Dev (4 classes) &rarr; App Dev (4 classes)</div>
+                </div>
+              </div>
+              <div class="club-meta-item">
+                <div class="icon pink"><i class="fas fa-dollar-sign"></i></div>
+                <div>
+                  <div class="label">Cost</div>
+                  <div class="value">1:1 Session &mdash; $50/hour<br>Group Class &mdash; $40/hour</div>
+                </div>
+              </div>
+            </div>
+
+            <div style="margin-top:28px;display:flex;gap:14px;flex-wrap:wrap;">
+              <a href="register.html" class="btn-cta">Register Now</a>
+              <a href="index.html#programs" class="btn-cta-outline">View All Programs</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       CLASS STRUCTURE
+  ========================================== -->
+  <section class="class-structure">
+    <div class="container">
+      <div class="structure-card fade-up">
+        <h3><i class="fas fa-chalkboard-teacher" style="color:var(--primary);margin-right:10px;"></i> Each Class Session</h3>
+        <div class="structure-item">
+          <span class="structure-time">15 min</span>
+          <span class="structure-label"><strong>Assignment Review</strong> &mdash; Review previous week's homework and share progress</span>
+        </div>
+        <div class="structure-item">
+          <span class="structure-time">20 min</span>
+          <span class="structure-label"><strong>Concept & Prompts</strong> &mdash; Learn today's Claude AI prompts and coding concepts</span>
+        </div>
+        <div class="structure-item">
+          <span class="structure-time">60 min</span>
+          <span class="structure-label"><strong>Hands-on Project</strong> &mdash; Build and create your own project with guidance</span>
+        </div>
+        <div class="structure-item">
+          <span class="structure-time">15 min</span>
+          <span class="structure-label"><strong>Debug & Present</strong> &mdash; Fix errors and present your work to the class</span>
+        </div>
+        <div class="structure-item">
+          <span class="structure-time">10 min</span>
+          <span class="structure-label"><strong>Homework</strong> &mdash; Receive next week's assignment and challenges</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       CURRICULUM
+  ========================================== -->
+  <section class="curriculum-section">
+    <div class="container">
+      <div class="section-heading" style="text-align:center;margin-bottom:50px;">
+        <span class="tag" style="display:inline-block;padding:5px 14px;background:rgba(27,20,100,0.06);color:var(--primary);font-size:12px;font-weight:700;border-radius:50px;margin-bottom:14px;text-transform:uppercase;letter-spacing:1.5px;">CURRICULUM</span>
+        <h2 style="font-size:36px;font-weight:800;">9-Month <span style="color:var(--primary);">Learning Journey</span></h2>
+      </div>
+
+      <!-- Semester 1 -->
+      <div class="semester-card fade-up">
+        <span class="semester-badge s1">Semester 1</span>
+        <h4>Foundation &mdash; Getting Started</h4>
+        <p class="semester-desc">Learn basic coding concepts and create your first website, game, and app using Claude AI.</p>
+        <div class="table-responsive">
+          <table class="curriculum-table">
+            <thead>
+              <tr>
+                <th style="width:60px;">#</th>
+                <th style="width:90px;">Area</th>
+                <th>Topic</th>
+                <th>What You'll Learn</th>
+                <th>Project</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>1</td><td><span class="area-badge web">Web</span></td><td>Web Basics 1</td><td>Intro to Claude coding, HTML structure, headings, paragraphs, images</td><td>Personal intro page</td></tr>
+              <tr><td>2</td><td><span class="area-badge web">Web</span></td><td>Web Basics 2</td><td>CSS colors, fonts, buttons, box design</td><td>Styled profile page</td></tr>
+              <tr><td>3</td><td><span class="area-badge web">Web</span></td><td>Web Basics 3</td><td>Sections, card layouts, simple navigation</td><td>Hobby showcase site</td></tr>
+              <tr><td>4</td><td><span class="area-badge web">Web</span></td><td>Web Basics 4</td><td>JavaScript buttons, form inputs, basic interactions</td><td>Contact form page</td></tr>
+              <tr><td>5</td><td><span class="area-badge game">Game</span></td><td>Game Basics 1</td><td>Game structure, variables, scoring concepts</td><td>Click score game</td></tr>
+              <tr><td>6</td><td><span class="area-badge game">Game</span></td><td>Game Basics 2</td><td>Keyboard controls, character movement</td><td>Movement game</td></tr>
+              <tr><td>7</td><td><span class="area-badge game">Game</span></td><td>Game Basics 3</td><td>Collision detection, obstacle avoidance</td><td>Mini action game</td></tr>
+              <tr><td>8</td><td><span class="area-badge game">Game</span></td><td>Game Basics 4</td><td>Score, lives, game over screen</td><td>Complete mini game</td></tr>
+              <tr><td>9</td><td><span class="area-badge app">App</span></td><td>App Basics 1</td><td>App structure, home screen and menu design</td><td>App screen draft</td></tr>
+              <tr><td>10</td><td><span class="area-badge app">App</span></td><td>App Basics 2</td><td>Profile screens, button linking, navigation</td><td>2-3 screen app</td></tr>
+              <tr><td>11</td><td><span class="area-badge app">App</span></td><td>App Basics 3</td><td>Lists, input fields, simple data display</td><td>Memo app draft</td></tr>
+              <tr><td>12</td><td><span class="area-badge app">App</span></td><td>App Basics 4</td><td>Polish, presentation prep, design improvements</td><td>Semester 1 app project</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Semester 2 -->
+      <div class="semester-card fade-up">
+        <span class="semester-badge s2">Semester 2</span>
+        <h4>Expansion &mdash; Building Real Products</h4>
+        <p class="semester-desc">Build on your foundation to create service-quality results with expanded features.</p>
+        <div class="table-responsive">
+          <table class="curriculum-table">
+            <thead>
+              <tr>
+                <th style="width:60px;">#</th>
+                <th style="width:90px;">Area</th>
+                <th>Topic</th>
+                <th>What You'll Learn</th>
+                <th>Project</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>13</td><td><span class="area-badge web">Web</span></td><td>Web Expand 1</td><td>Multi-page structure: home, about, contact</td><td>3-page website</td></tr>
+              <tr><td>14</td><td><span class="area-badge web">Web</span></td><td>Web Expand 2</td><td>Responsive design basics, mobile optimization</td><td>Mobile-friendly site</td></tr>
+              <tr><td>15</td><td><span class="area-badge web">Web</span></td><td>Web Expand 3</td><td>Brand colors, banners, CTA button design</td><td>Brand landing page</td></tr>
+              <tr><td>16</td><td><span class="area-badge web">Web</span></td><td>Web Expand 4</td><td>Claude-powered copy and design refinement</td><td>Polished website</td></tr>
+              <tr><td>17</td><td><span class="area-badge game">Game</span></td><td>Game Expand 1</td><td>Enemies, speed changes, difficulty tuning</td><td>Obstacle game</td></tr>
+              <tr><td>18</td><td><span class="area-badge game">Game</span></td><td>Game Expand 2</td><td>Level system, background transitions, stages</td><td>2-level game</td></tr>
+              <tr><td>19</td><td><span class="area-badge game">Game</span></td><td>Game Expand 3</td><td>UI buttons, start screen, restart function</td><td>Polished game</td></tr>
+              <tr><td>20</td><td><span class="area-badge game">Game</span></td><td>Game Expand 4</td><td>Sound effects, scoreboard, final touches</td><td>Presentation game</td></tr>
+              <tr><td>21</td><td><span class="area-badge app">App</span></td><td>App Expand 1</td><td>Login mock-up, user profiles</td><td>Profile app</td></tr>
+              <tr><td>22</td><td><span class="area-badge app">App</span></td><td>App Expand 2</td><td>List &amp; detail views, search functionality</td><td>Info app</td></tr>
+              <tr><td>23</td><td><span class="area-badge app">App</span></td><td>App Expand 3</td><td>Study tracker / habit tracker / planner (pick one)</td><td>Practical app draft</td></tr>
+              <tr><td>24</td><td><span class="area-badge app">App</span></td><td>App Expand 4</td><td>Design polish, testing, presentation</td><td>Complete app project</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Semester 3 -->
+      <div class="semester-card fade-up">
+        <span class="semester-badge s3">Semester 3</span>
+        <h4>Portfolio &mdash; Your Capstone Project</h4>
+        <p class="semester-desc">Choose one theme and develop it across web, game, and app for your final portfolio.</p>
+        <div class="table-responsive">
+          <table class="curriculum-table">
+            <thead>
+              <tr>
+                <th style="width:60px;">#</th>
+                <th style="width:90px;">Area</th>
+                <th>Topic</th>
+                <th>What You'll Learn</th>
+                <th>Project</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>25</td><td><span class="area-badge web">Web</span></td><td>Final Web 1</td><td>Choose project theme, design website structure</td><td>Wireframe &amp; plan</td></tr>
+              <tr><td>26</td><td><span class="area-badge web">Web</span></td><td>Final Web 2</td><td>About page, features, image sections</td><td>Official site draft</td></tr>
+              <tr><td>27</td><td><span class="area-badge web">Web</span></td><td>Final Web 3</td><td>Responsive, animations, contact/signup features</td><td>Polished website</td></tr>
+              <tr><td>28</td><td><span class="area-badge web">Web</span></td><td>Final Web 4</td><td>Final edits, portfolio packaging</td><td>Final web project</td></tr>
+              <tr><td>29</td><td><span class="area-badge game">Game</span></td><td>Final Game 1</td><td>Game rules, characters, story &amp; world design</td><td>Game design doc</td></tr>
+              <tr><td>30</td><td><span class="area-badge game">Game</span></td><td>Final Game 2</td><td>Core gameplay, scoring &amp; levels</td><td>Playable game</td></tr>
+              <tr><td>31</td><td><span class="area-badge game">Game</span></td><td>Final Game 3</td><td>Collision polish, UI, effects, difficulty</td><td>Game v1.0</td></tr>
+              <tr><td>32</td><td><span class="area-badge game">Game</span></td><td>Final Game 4</td><td>Testing, bug fixes, presentation prep</td><td>Final game project</td></tr>
+              <tr><td>33</td><td><span class="area-badge app">App</span></td><td>Final App 1</td><td>App goals, users, core features planning</td><td>App design doc</td></tr>
+              <tr><td>34</td><td><span class="area-badge app">App</span></td><td>Final App 2</td><td>Home, profile, list, detail screens</td><td>App prototype</td></tr>
+              <tr><td>35</td><td><span class="area-badge app">App</span></td><td>Final App 3</td><td>Feature additions, UX improvements, design</td><td>App v1.0</td></tr>
+              <tr><td>36</td><td><span class="area-badge app">App</span></td><td>Final App 4</td><td>Demo prep, presentation, portfolio packaging</td><td>Final app project</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================
+       CTA SECTION
+  ========================================== -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-card fade-up">
+        <h2>Ready to Start <span style="color:var(--primary);">Building with AI</span>?</h2>
+        <p class="subtitle">Book a free assessment and discover how our AI Creator Coding program can unlock your child's potential.</p>
+        <div class="contact-info-row">
+          <div class="contact-info-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>#204B 10190 152A St. Surrey BC</span>
+          </div>
+          <div class="contact-info-item">
+            <i class="fas fa-phone"></i>
+            <span>(778) 955-9968</span>
+          </div>
+          <div class="contact-info-item">
+            <i class="fas fa-envelope"></i>
+            <span>info@kidsfortech.com</span>
+          </div>
+        </div>
+        <a href="register.html" class="btn-cta">Book Free Assessment</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       FOOTER
+  ========================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <div class="footer-col">
+            <img src="assets/images/autism-club-logo.png" alt="Autism Club" style="height:60px;margin-bottom:16px;filter:brightness(10);" width="180" height="60">
+            <p>A specialized AI-powered educational institution in Surrey, Greater Vancouver, dedicated to supporting autistic children and young adults to connect with a broader world.</p>
+            <div class="footer-social">
+              <a href="https://www.facebook.com/profile.php?id=61574664762256" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://www.instagram.com/autismclubcanada/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+              <a href="mailto:info@kidsfortech.com"><i class="fas fa-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-2">
+          <div class="footer-col">
+            <h5>Programs</h5>
+            <ul class="footer-links">
+              <li><a href="lego-club.html">Lego Club</a></li>
+              <li><a href="robot-coding-club.html">Robot Coding</a></li>
+              <li><a href="media-arts-club.html">Media Arts</a></li>
+              <li><a href="music-club.html">Music Club</a></li>
+              <li><a href="ai-creator-coding.html">AI Creator Coding</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-6 col-lg-2">
+          <div class="footer-col">
+            <h5>Quick Links</h5>
+            <ul class="footer-links">
+              <li><a href="about-us.html">About Us</a></li>
+              <li><a href="event.html">Events</a></li>
+              <li><a href="afu-funding.html">AFU Funding</a></li>
+              <li><a href="register.html">Register</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="footer-col">
+            <h5>Contact Us</h5>
+            <ul class="footer-links">
+              <li><i class="fas fa-map-marker-alt" style="margin-right:8px;color:var(--accent-cyan);"></i> #204B 10190 152A St. Surrey BC V3R 1J7</li>
+              <li><i class="fas fa-phone" style="margin-right:8px;color:var(--accent-cyan);"></i> (778) 955-9968</li>
+              <li><i class="fas fa-envelope" style="margin-right:8px;color:var(--accent-cyan);"></i> info@kidsfortech.com</li>
+              <li><i class="fas fa-clock" style="margin-right:8px;color:var(--accent-cyan);"></i> Mon-Fri: 3:30 PM - 7:30 PM</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2025 Autism Club. All rights reserved. Powered by KidsForTech.
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================
+       SCRIPTS
+  ========================================== -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Sticky header shadow on scroll
+    window.addEventListener('scroll', function() {
+      const header = document.getElementById('siteHeader');
+      if (window.scrollY > 10) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+
+    // Mobile hamburger toggle
+    document.getElementById('hamburgerBtn').addEventListener('click', function() {
+      document.getElementById('mobileNav').classList.toggle('active');
+      const icon = this.querySelector('i');
+      if (icon.classList.contains('fa-bars')) {
+        icon.classList.remove('fa-bars');
+        icon.classList.add('fa-times');
+      } else {
+        icon.classList.remove('fa-times');
+        icon.classList.add('fa-bars');
+      }
+    });
+
+    // Fade-up animation on scroll
+    const fadeElements = document.querySelectorAll('.fade-up');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+    fadeElements.forEach(el => observer.observe(el));
+  </script>
+  <div id="google_translate_element" style="display:none;"></div>
+  <script>
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({
+        pageLanguage: 'en',
+        includedLanguages: 'en,ko,zh-CN,hi,es,fr,ja',
+        autoDisplay: false
+      }, 'google_translate_element');
+    }
+  </script>
+  <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  <script>
+    (function() {
+      var langNames = { 'en': 'EN', 'ko': 'KO', 'zh-CN': 'CN', 'hi': 'HI', 'es': 'ES', 'fr': 'FR', 'ja': 'JA' };
+      var langToggle = document.getElementById('langToggle');
+      var langDropdown = document.getElementById('langDropdown');
+      var langText = document.getElementById('currentLangText');
+
+      function updateLangBtnText(lang) {
+        if (langText) langText.textContent = langNames[lang] || 'English';
+      }
+
+      if (langToggle && langDropdown) {
+        langToggle.addEventListener('click', function(e) {
+          e.stopPropagation();
+          var isOpen = langDropdown.classList.contains('open');
+          langDropdown.classList.toggle('open');
+          langToggle.classList.toggle('active');
+          langToggle.setAttribute('aria-expanded', !isOpen);
+        });
+        document.addEventListener('click', function(e) {
+          if (!langToggle.contains(e.target) && !langDropdown.contains(e.target)) {
+            langDropdown.classList.remove('open');
+            langToggle.classList.remove('active');
+            langToggle.setAttribute('aria-expanded', 'false');
+          }
+        });
+      }
+
+      document.querySelectorAll('[data-lang]').forEach(function(option) {
+        option.addEventListener('click', function(e) {
+          e.preventDefault();
+          var lang = this.getAttribute('data-lang');
+          updateLangBtnText(lang);
+          changeLanguage(lang);
+          document.querySelectorAll('[data-lang]').forEach(function(opt) { opt.classList.remove('active'); });
+          document.querySelectorAll('[data-lang="' + lang + '"]').forEach(function(opt) { opt.classList.add('active'); });
+          if (langDropdown) { langDropdown.classList.remove('open'); langToggle.classList.remove('active'); }
+          var mobileNav = document.getElementById('mobileNav');
+          if (mobileNav && mobileNav.classList.contains('active')) {
+            mobileNav.classList.remove('active');
+            var icon = document.querySelector('#hamburgerBtn i');
+            if (icon) { icon.classList.remove('fa-times'); icon.classList.add('fa-bars'); }
+          }
+        });
+      });
+
+      function changeLanguage(lang) {
+        if (lang === 'en') {
+          document.cookie = 'googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
+          document.cookie = 'googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=.' + window.location.hostname;
+          window.location.reload();
+          return;
+        }
+        document.cookie = 'googtrans=/en/' + lang + '; path=/;';
+        document.cookie = 'googtrans=/en/' + lang + '; path=/; domain=.' + window.location.hostname;
+        var select = document.querySelector('.goog-te-combo');
+        if (select) { select.value = lang; select.dispatchEvent(new Event('change')); } else { window.location.reload(); }
+      }
+
+      (function() {
+        var match = document.cookie.match(/googtrans=\/en\/([^;]+)/);
+        var currentLang = match ? match[1] : 'en';
+        document.querySelectorAll('[data-lang]').forEach(function(opt) { opt.classList.remove('active'); });
+        document.querySelectorAll('[data-lang="' + currentLang + '"]').forEach(function(opt) { opt.classList.add('active'); });
+        updateLangBtnText(currentLang);
+      })();
+    })();
+  </script>
+
+</body>
+</html>

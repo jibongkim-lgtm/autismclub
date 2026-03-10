@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Register for Autism Club programs and book a free assessment for your child. Explore STEM, robotics, coding, music, arts, and sports programs for children and adults with autism.">
+  <meta name="author" content="Autism Club">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <link rel="canonical" href="https://www.autismclubcanada.com/register.html">
+  <link rel="icon" type="image/png" href="assets/images/autism-club-logo.png">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#1B1464">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Register - Autism Club">
+  <meta property="og:description" content="Register for Autism Club programs and book a free assessment for your child. Explore STEM, robotics, coding, music, arts, and sports programs for children and adults with autism.">
+  <meta property="og:url" content="https://www.autismclubcanada.com/register.html">
+  <meta property="og:image" content="https://www.autismclubcanada.com/assets/images/autism-club-logo.png">
+  <meta property="og:site_name" content="Autism Club Canada">
+  <meta property="og:locale" content="en_CA">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Register - Autism Club">
+  <meta name="twitter:description" content="Register for Autism Club programs and book a free assessment for your child. Explore STEM, robotics, coding, music, arts, and sports programs for children and adults with autism.">
+  <meta name="twitter:image" content="https://www.autismclubcanada.com/assets/images/autism-club-logo.png">
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Register for Autism Club Programs",
+  "description": "Register for AI-powered education programs and book a free assessment at Autism Club Canada.",
+  "url": "https://www.autismclubcanada.com/register.html",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Autism Club Canada",
+    "url": "https://www.autismclubcanada.com"
+  }
+}
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <title>Register - Autism Club</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    :root {
+      --primary: #1B1464;
+      --primary-light: #2D2B8E;
+      --accent-cyan: #00D4FF;
+      --accent-blue: #7DCDF4;
+      --cta-orange: #FFB200;
+      --cta-orange-hover: #E5A000;
+      --mint: #ACF0D1;
+      --pink: #FF83AE;
+      --text-dark: #1F1F1F;
+      --text-gray: #555;
+      --text-light: #777;
+      --bg-light: #F4F7FB;
+      --bg-white: #ffffff;
+      --card-shadow: 0 8px 30px rgba(27, 20, 100, 0.08);
+      --card-shadow-hover: 0 16px 40px rgba(27, 20, 100, 0.15);
+      --radius-sm: 12px;
+      --radius-md: 20px;
+      --radius-lg: 30px;
+      --radius-pill: 50px;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      color: var(--text-dark);
+      line-height: 1.7;
+      overflow-x: hidden;
+      background: var(--bg-white);
+    }
+
+    /* ============================================
+       HEADER
+    ============================================ */
+    .site-header { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; background: var(--bg-white); border-bottom: 4px solid var(--accent-cyan); transition: box-shadow 0.3s ease; }
+    .site-header.scrolled { box-shadow: 0 2px 20px rgba(0,0,0,0.08); }
+    .header-inner { max-width: 1310px; margin: 0 auto; padding: 0 24px; display: flex; align-items: center; justify-content: space-between; height: 110px; }
+    .header-logo img { height: 130px; transition: transform 0.3s; }
+    .header-logo img:hover { transform: scale(1.03); }
+    .nav-links { display: flex; align-items: center; gap: 8px; list-style: none; margin: 0; padding: 0; }
+    .nav-links > li { position: relative; }
+    .nav-links > li > a { display: inline-block; padding: 8px 16px; color: var(--text-dark); text-decoration: none; font-weight: 500; font-size: 15px; border-radius: var(--radius-sm); transition: all 0.3s; }
+    .nav-links > li > a:hover { background: var(--bg-light); color: var(--primary); }
+    .nav-links .dropdown-menu-custom { display: none; position: absolute; top: 100%; left: 0; background: var(--bg-white); border-radius: var(--radius-sm); box-shadow: var(--card-shadow-hover); min-width: 240px; padding: 8px 0; z-index: 999; }
+    .nav-links li:hover .dropdown-menu-custom { display: block; }
+    .dropdown-menu-custom a { display: block; padding: 10px 20px; color: var(--text-dark); text-decoration: none; font-size: 14px; font-weight: 400; transition: all 0.2s; }
+    .dropdown-menu-custom a:hover { background: var(--bg-light); color: var(--primary); padding-left: 24px; }
+    .nav-social { display: flex; align-items: center; gap: 12px; margin-left: 8px; }
+    .nav-social a { display: flex; align-items: center; justify-content: center; width: 36px; height: 36px; border-radius: 50%; background: var(--bg-light); color: var(--primary); text-decoration: none; transition: all 0.3s; font-size: 14px; }
+    .nav-social a:hover { background: var(--primary); color: #fff; }
+    .lang-selector { position: relative; }
+    .lang-btn { display: flex; align-items: center; justify-content: center; width: 36px; height: 36px; border-radius: 50%; background: var(--bg-light); color: var(--primary); border: none; cursor: pointer; transition: all 0.3s; font-size: 12px; font-weight: 700; font-family: 'Be Vietnam Pro', sans-serif; letter-spacing: -0.5px; padding: 0; }
+    .lang-btn .globe-icon { display: none; }
+    .lang-btn:hover, .lang-btn.active { background: var(--primary); color: #fff; }
+    .lang-dropdown { display: none; position: absolute; top: calc(100% + 8px); right: 0; background: var(--bg-white); border-radius: var(--radius-sm); box-shadow: var(--card-shadow-hover); min-width: 180px; padding: 8px 0; z-index: 1001; }
+    .lang-dropdown.open { display: block; }
+    .lang-option { display: flex; align-items: center; gap: 10px; padding: 10px 20px; color: var(--text-dark); text-decoration: none; font-size: 14px; font-weight: 400; transition: all 0.2s; white-space: nowrap; }
+    .lang-option:hover { background: var(--bg-light); color: var(--primary); padding-left: 24px; }
+    .lang-option.active { color: var(--primary); font-weight: 600; background: rgba(27, 20, 100, 0.04); }
+    .lang-flag { font-size: 18px; line-height: 1; }
+    .mobile-lang-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+    .mobile-lang-option { display: block; padding: 10px 14px; background: var(--bg-light); border-radius: var(--radius-sm); color: var(--text-dark); text-decoration: none; font-size: 14px; font-weight: 500; text-align: center; transition: all 0.2s; border: 2px solid transparent; }
+    .mobile-lang-option:hover { border-color: var(--primary); color: var(--primary); }
+    .mobile-lang-option.active { background: var(--primary); color: #fff; font-weight: 600; }
+    .goog-te-banner-frame, .skiptranslate, #goog-gt-tt, .goog-te-balloon-frame { display: none !important; }
+    body { top: 0 !important; }
+    .btn-cta { display: inline-block; padding: 12px 28px; background: var(--cta-orange); color: var(--text-dark); font-weight: 700; font-size: 14px; text-decoration: none; border-radius: var(--radius-pill); border: none; cursor: pointer; transition: all 0.3s; letter-spacing: 0.5px; text-transform: uppercase; }
+    .btn-cta:hover { background: var(--cta-orange-hover); transform: translateY(-2px); box-shadow: 0 6px 20px rgba(255, 178, 0, 0.35); color: var(--text-dark); }
+    .hamburger { display: none; background: var(--primary); border: none; width: 44px; height: 44px; border-radius: 50%; color: #fff; font-size: 18px; cursor: pointer; transition: all 0.3s; }
+    .hamburger:hover { background: var(--primary-light); }
+
+    /* ============================================
+       PAGE BANNER
+    ============================================ */
+    .page-banner { padding: 160px 0 60px; background: linear-gradient(135deg, #F4F7FB 0%, #E8F4FD 50%, #F0E6FF 100%); text-align: center; position: relative; overflow: hidden; }
+    .page-banner::before { content: ''; position: absolute; top: -50%; right: -20%; width: 600px; height: 600px; border-radius: 50%; background: radial-gradient(circle, rgba(0,212,255,0.08) 0%, transparent 70%); }
+    .page-banner .tag { display: inline-block; padding: 5px 14px; background: rgba(27,20,100,0.06); color: var(--primary); font-size: 12px; font-weight: 700; border-radius: var(--radius-pill); margin-bottom: 14px; text-transform: uppercase; letter-spacing: 1.5px; }
+    .page-banner h1 { font-size: 42px; font-weight: 800; color: var(--text-dark); margin-bottom: 16px; }
+    .page-banner h1 .accent { color: var(--primary); }
+    .page-banner p { font-size: 17px; color: var(--text-gray); max-width: 600px; margin: 0 auto; }
+
+    /* ============================================
+       FORM SECTION
+    ============================================ */
+    .register-section { padding: 80px 0; background: var(--bg-light); }
+    .register-card {
+      background: var(--bg-white);
+      border-radius: var(--radius-lg);
+      padding: 50px;
+      box-shadow: var(--card-shadow);
+    }
+    .register-card h2 {
+      font-size: 28px;
+      font-weight: 800;
+      color: var(--text-dark);
+      margin-bottom: 8px;
+    }
+    .register-card .subtitle {
+      font-size: 16px;
+      color: var(--text-gray);
+      margin-bottom: 32px;
+    }
+    .form-label-custom {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text-dark);
+      margin-bottom: 6px;
+      display: block;
+    }
+    .form-input {
+      width: 100%;
+      padding: 14px 18px;
+      border: 2px solid #e8e8e8;
+      border-radius: var(--radius-sm);
+      font-family: 'Be Vietnam Pro', sans-serif;
+      font-size: 15px;
+      color: var(--text-dark);
+      background: var(--bg-white);
+      transition: all 0.3s;
+      outline: none;
+    }
+    .form-input:focus {
+      border-color: var(--accent-cyan);
+      box-shadow: 0 0 0 4px rgba(0, 212, 255, 0.1);
+    }
+    .form-input::placeholder { color: var(--text-light); }
+    textarea.form-input { resize: vertical; min-height: 120px; }
+
+    /* Styled checkboxes */
+    .checkbox-group-title {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--text-dark);
+      margin-bottom: 16px;
+      margin-top: 8px;
+    }
+    .styled-checkbox {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 12px;
+      cursor: pointer;
+    }
+    .styled-checkbox input[type="checkbox"] {
+      appearance: none;
+      -webkit-appearance: none;
+      width: 22px;
+      height: 22px;
+      border: 2px solid #d0d0d0;
+      border-radius: 6px;
+      cursor: pointer;
+      flex-shrink: 0;
+      transition: all 0.2s;
+      position: relative;
+    }
+    .styled-checkbox input[type="checkbox"]:checked {
+      background: var(--primary);
+      border-color: var(--primary);
+    }
+    .styled-checkbox input[type="checkbox"]:checked::after {
+      content: '\f00c';
+      font-family: 'Font Awesome 6 Free';
+      font-weight: 900;
+      color: #fff;
+      font-size: 12px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .styled-checkbox input[type="checkbox"]:focus {
+      border-color: var(--accent-cyan);
+      box-shadow: 0 0 0 3px rgba(0, 212, 255, 0.15);
+    }
+    .styled-checkbox span {
+      font-size: 15px;
+      color: var(--text-gray);
+      line-height: 1.4;
+    }
+
+    /* Submit button */
+    .btn-submit {
+      display: inline-block;
+      padding: 16px 48px;
+      background: var(--cta-orange);
+      color: var(--text-dark);
+      font-family: 'Be Vietnam Pro', sans-serif;
+      font-weight: 700;
+      font-size: 16px;
+      text-decoration: none;
+      border-radius: var(--radius-pill);
+      border: none;
+      cursor: pointer;
+      transition: all 0.3s;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+    .btn-submit:hover {
+      background: var(--cta-orange-hover);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(255, 178, 0, 0.35);
+    }
+
+    /* Map section */
+    .map-section { padding: 0 0 80px; background: var(--bg-light); }
+    .map-wrap {
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--card-shadow);
+    }
+    .map-wrap iframe {
+      width: 100%;
+      height: 400px;
+      display: block;
+      border: none;
+    }
+
+    /* ============================================
+       FOOTER
+    ============================================ */
+    .site-footer { background: var(--primary); color: rgba(255,255,255,0.8); padding: 60px 0 30px; }
+    .footer-col h5 { font-size: 16px; font-weight: 700; color: #fff; margin-bottom: 20px; }
+    .footer-col p { font-size: 14px; line-height: 1.8; color: rgba(255,255,255,0.65); }
+    .footer-links { list-style: none; padding: 0; margin: 0; }
+    .footer-links li { margin-bottom: 10px; }
+    .footer-links a { color: rgba(255,255,255,0.65); text-decoration: none; font-size: 14px; transition: all 0.3s; }
+    .footer-links a:hover { color: var(--accent-cyan); padding-left: 4px; }
+    .footer-social { display: flex; gap: 12px; margin-top: 16px; }
+    .footer-social a { display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 50%; background: rgba(255,255,255,0.1); color: #fff; text-decoration: none; transition: all 0.3s; }
+    .footer-social a:hover { background: var(--accent-cyan); color: var(--primary); }
+    .footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); margin-top: 40px; padding-top: 20px; text-align: center; font-size: 13px; color: rgba(255,255,255,0.45); }
+
+    /* ============================================
+       MOBILE NAV
+    ============================================ */
+    .mobile-nav {
+      display: none;
+      position: fixed;
+      top: 80px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: var(--bg-white);
+      z-index: 999;
+      overflow-y: auto;
+      padding: 24px;
+    }
+    @media (max-width: 991px) {
+      .nav-links, .nav-social, .header-right-desktop, .lang-selector { display: none !important; }
+      .hamburger { display: flex; align-items: center; justify-content: center; }
+      .mobile-nav.active { display: block; }
+      .mobile-nav a { display: block; padding: 14px 0; color: var(--text-dark); text-decoration: none; font-size: 16px; font-weight: 500; border-bottom: 1px solid #eee; }
+      .mobile-nav a:hover { color: var(--primary); }
+      .mobile-nav .sub-links { padding-left: 20px; }
+      .mobile-nav .sub-links a { font-size: 14px; font-weight: 400; color: var(--text-gray); }
+      .page-banner { padding: 130px 0 40px; }
+      .page-banner h1 { font-size: 28px; }
+      .register-card { padding: 30px 20px; }
+    }
+    @media (max-width: 576px) {
+      .page-banner h1 { font-size: 24px; }
+    }
+
+    /* ============================================
+       ANIMATIONS
+    ============================================ */
+    .fade-up { opacity: 0; transform: translateY(30px); transition: opacity 0.6s ease, transform 0.6s ease; }
+    .fade-up.visible { opacity: 1; transform: translateY(0); }
+  </style>
+</head>
+<body>
+
+  <!-- ==========================================
+       HEADER
+  ========================================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner">
+      <a href="index.html" class="header-logo">
+        <img src="assets/images/autism-club-logo.png" alt="Autism Club Logo" width="180" height="60">
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li>
+          <a href="index.html#programs" data-nav-tab="kids">Kids <i class="fas fa-chevron-down" style="font-size:10px;margin-left:4px;"></i></a>
+          <div class="dropdown-menu-custom">
+            <a href="lego-club.html"><i class="fas fa-puzzle-piece" style="margin-right:8px;color:var(--cta-orange);"></i> Lego Club</a>
+            <a href="reading-and-writing-club.html"><i class="fas fa-book-open" style="margin-right:8px;color:var(--pink);"></i> Reading & Writing Club</a>
+            <a href="animation-digital-drawing-club.html"><i class="fas fa-pen-nib" style="margin-right:8px;color:#4F3DD9;"></i> Animation Drawing Club</a>
+            <a href="music-club.html"><i class="fas fa-music" style="margin-right:8px;color:var(--cta-orange);"></i> Music Club</a>
+            <a href="golf-club.html"><i class="fas fa-golf-ball" style="margin-right:8px;color:#2DB87A;"></i> Golf Club</a>
+            <a href="running-club.html"><i class="fas fa-running" style="margin-right:8px;color:var(--accent-cyan);"></i> Running Club</a>
+          </div>
+        </li>
+        <li>
+          <a href="index.html#programs" data-nav-tab="youth">Youth <i class="fas fa-chevron-down" style="font-size:10px;margin-left:4px;"></i></a>
+          <div class="dropdown-menu-custom">
+            <a href="lego-spike-club.html"><i class="fas fa-microchip" style="margin-right:8px;color:var(--cta-orange);"></i> Lego Spike Club</a>
+            <a href="robot-coding-club.html"><i class="fas fa-robot" style="margin-right:8px;color:var(--accent-cyan);"></i> Robot Coding Club</a>
+            <a href="reading-and-writing-club.html"><i class="fas fa-book-open" style="margin-right:8px;color:var(--pink);"></i> Reading & Writing Club</a>
+            <a href="media-arts-club.html"><i class="fas fa-palette" style="margin-right:8px;color:#FF6B35;"></i> Media Arts Club</a>
+            <a href="animation-digital-drawing-club.html"><i class="fas fa-pen-nib" style="margin-right:8px;color:#4F3DD9;"></i> Animation Drawing Club</a>
+            <a href="roblox-game-development-club.html"><i class="fas fa-gamepad" style="margin-right:8px;color:var(--mint);"></i> Roblox Game Dev Club</a>
+            <a href="ai-creator-coding.html"><i class="fas fa-code" style="margin-right:8px;color:var(--accent-cyan);"></i> AI Creator Coding</a>
+            <a href="music-club.html"><i class="fas fa-music" style="margin-right:8px;color:var(--cta-orange);"></i> Music Club</a>
+            <a href="golf-club.html"><i class="fas fa-golf-ball" style="margin-right:8px;color:#2DB87A;"></i> Golf Club</a>
+            <a href="running-club.html"><i class="fas fa-running" style="margin-right:8px;color:var(--accent-cyan);"></i> Running Club</a>
+          </div>
+        </li>
+        <li>
+          <a href="index.html#programs" data-nav-tab="adult">Adult <i class="fas fa-chevron-down" style="font-size:10px;margin-left:4px;"></i></a>
+          <div class="dropdown-menu-custom">
+            <a href="robot-coding-club.html"><i class="fas fa-robot" style="margin-right:8px;color:var(--accent-cyan);"></i> Robot Coding Club</a>
+            <a href="reading-and-writing-club.html"><i class="fas fa-book-open" style="margin-right:8px;color:var(--pink);"></i> Reading & Writing Club</a>
+            <a href="media-arts-club.html"><i class="fas fa-palette" style="margin-right:8px;color:#FF6B35;"></i> Media Arts Club</a>
+            <a href="animation-digital-drawing-club.html"><i class="fas fa-pen-nib" style="margin-right:8px;color:#4F3DD9;"></i> Animation Drawing Club</a>
+            <a href="roblox-game-development-club.html"><i class="fas fa-gamepad" style="margin-right:8px;color:var(--mint);"></i> Roblox Game Dev Club</a>
+            <a href="ai-creator-coding.html"><i class="fas fa-code" style="margin-right:8px;color:var(--accent-cyan);"></i> AI Creator Coding</a>
+            <a href="music-club.html"><i class="fas fa-music" style="margin-right:8px;color:var(--cta-orange);"></i> Music Club</a>
+            <a href="golf-club.html"><i class="fas fa-golf-ball" style="margin-right:8px;color:#2DB87A;"></i> Golf Club</a>
+            <a href="running-club.html"><i class="fas fa-running" style="margin-right:8px;color:var(--accent-cyan);"></i> Running Club</a>
+          </div>
+        </li>
+        <li><a href="event.html">Events</a></li>
+        <li><a href="about-us.html">About Us</a></li>
+        <li><a href="afu-funding.html">AFU Funding</a></li>
+      </ul>
+
+      <div class="header-right-desktop" style="display:flex;align-items:center;gap:12px;">
+                <div class="lang-selector">
+          <button class="lang-btn" id="langToggle" aria-label="Select Language" aria-expanded="false">
+            <span id="currentLangText">EN</span>
+          </button>
+          <div class="lang-dropdown" id="langDropdown">
+            <a href="#" data-lang="en" class="lang-option active"><span class="lang-flag">🇺🇸</span> English</a>
+            <a href="#" data-lang="ko" class="lang-option"><span class="lang-flag">🇰🇷</span> 한국어</a>
+            <a href="#" data-lang="zh-CN" class="lang-option"><span class="lang-flag">🇨🇳</span> 中文</a>
+            <a href="#" data-lang="hi" class="lang-option"><span class="lang-flag">🇮🇳</span> हिन्दी</a>
+            <a href="#" data-lang="es" class="lang-option"><span class="lang-flag">🇪🇸</span> Español</a>
+            <a href="#" data-lang="fr" class="lang-option"><span class="lang-flag">🇫🇷</span> Français</a>
+            <a href="#" data-lang="ja" class="lang-option"><span class="lang-flag">🇯🇵</span> 日本語</a>
+          </div>
+        </div>
+<div class="nav-social">
+          <a href="https://www.facebook.com/profile.php?id=61574664762256" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/autismclubcanada/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+        </div>
+        <a href="register.html" class="btn-cta">Register Now</a>
+      </div>
+
+      <button class="hamburger" id="hamburgerBtn"><i class="fas fa-bars"></i></button>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation -->
+  <nav class="mobile-nav" id="mobileNav">
+    <a href="index.html"><strong>Home</strong></a>
+    <a href="index.html#programs" data-nav-tab="kids"><strong>Kids</strong></a>
+    <div class="sub-links">
+      <a href="lego-club.html">Lego Club</a>
+      <a href="reading-and-writing-club.html">Reading & Writing Club</a>
+      <a href="animation-digital-drawing-club.html">Animation Drawing Club</a>
+      <a href="music-club.html">Music Club</a>
+      <a href="golf-club.html">Golf Club</a>
+      <a href="running-club.html">Running Club</a>
+    </div>
+    <a href="index.html#programs" data-nav-tab="youth"><strong>Youth</strong></a>
+    <div class="sub-links">
+      <a href="lego-spike-club.html">Lego Spike Club</a>
+      <a href="robot-coding-club.html">Robot Coding Club</a>
+      <a href="reading-and-writing-club.html">Reading & Writing Club</a>
+      <a href="media-arts-club.html">Media Arts Club</a>
+      <a href="animation-digital-drawing-club.html">Animation Drawing Club</a>
+      <a href="roblox-game-development-club.html">Roblox Game Dev Club</a>
+      <a href="ai-creator-coding.html">AI Creator Coding</a>
+      <a href="music-club.html">Music Club</a>
+      <a href="golf-club.html">Golf Club</a>
+      <a href="running-club.html">Running Club</a>
+    </div>
+    <a href="index.html#programs" data-nav-tab="adult"><strong>Adult</strong></a>
+    <div class="sub-links">
+      <a href="robot-coding-club.html">Robot Coding Club</a>
+      <a href="reading-and-writing-club.html">Reading & Writing Club</a>
+      <a href="media-arts-club.html">Media Arts Club</a>
+      <a href="animation-digital-drawing-club.html">Animation Drawing Club</a>
+      <a href="roblox-game-development-club.html">Roblox Game Dev Club</a>
+      <a href="ai-creator-coding.html">AI Creator Coding</a>
+      <a href="music-club.html">Music Club</a>
+      <a href="golf-club.html">Golf Club</a>
+      <a href="running-club.html">Running Club</a>
+    </div>
+    <a href="event.html"><strong>Events</strong></a>
+    <a href="about-us.html"><strong>About Us</strong></a>
+    <a href="afu-funding.html"><strong>AFU Funding</strong></a>
+        <div class="mobile-lang-selector" style="margin-top:16px;padding-top:16px;border-top:1px solid #eee;">
+      <strong style="display:block;margin-bottom:10px;font-size:14px;color:var(--primary);">
+        <i class="fas fa-globe" style="margin-right:6px;"></i> Language
+      </strong>
+      <div class="mobile-lang-grid">
+        <a href="#" data-lang="en" class="mobile-lang-option active">English</a>
+        <a href="#" data-lang="ko" class="mobile-lang-option">한국어</a>
+        <a href="#" data-lang="zh-CN" class="mobile-lang-option">中文</a>
+        <a href="#" data-lang="hi" class="mobile-lang-option">हिन्दी</a>
+        <a href="#" data-lang="es" class="mobile-lang-option">Español</a>
+        <a href="#" data-lang="fr" class="mobile-lang-option">Français</a>
+        <a href="#" data-lang="ja" class="mobile-lang-option">日本語</a>
+      </div>
+    </div>
+<div style="margin-top:20px;">
+      <a href="register.html" class="btn-cta" style="display:block;text-align:center;">Register Now</a>
+    </div>
+  </nav>
+
+  <!-- ==========================================
+       PAGE BANNER
+  ========================================== -->
+  <section class="page-banner">
+    <div class="container">
+      <span class="tag">REGISTER</span>
+      <h1>Book a Free <span class="accent">Assessment</span></h1>
+      <p>Sign up for a complimentary 2-hour trial session and discover the right program for your child.</p>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       REGISTRATION FORM
+  ========================================== -->
+  <section class="register-section">
+    <div class="container">
+      <div class="row g-4 justify-content-center">
+        <div class="col-lg-8 fade-up">
+          <div class="register-card">
+            <h2>Book Your Free 2-Hour Trial Session Today!</h2>
+            <p class="subtitle">Fill out the form below and we will get back to you shortly.</p>
+
+            <form action="https://api.web3forms.com/submit" method="POST">
+              <!-- Web3Forms Access Key -->
+              <input type="hidden" name="access_key" value="73609ca0-9dc5-4d0c-b4ff-a8fdd218f922">
+
+              <div class="row g-3">
+                <!-- Child First & Last Name -->
+                <div class="col-md-6">
+                  <label class="form-label-custom" for="first_name">Child's First Name *</label>
+                  <input name="first_name" type="text" class="form-input" id="first_name" placeholder="Enter first name" required>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label-custom" for="last_name">Child's Last Name *</label>
+                  <input name="last_name" type="text" class="form-input" id="last_name" placeholder="Enter last name" required>
+                </div>
+
+                <!-- Age -->
+                <div class="col-md-6">
+                  <label class="form-label-custom" for="age">Child's Age *</label>
+                  <input name="age" type="number" class="form-input" id="age" placeholder="Enter age" required>
+                </div>
+
+                <!-- Parent/Guardian First & Last Name -->
+                <div class="col-md-6">
+                  <label class="form-label-custom" for="parent_first_name">Parent's First Name *</label>
+                  <input name="parent_first_name" type="text" class="form-input" id="parent_first_name" placeholder="Enter first name" required>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label-custom" for="parent_last_name">Parent's Last Name *</label>
+                  <input name="parent_last_name" type="text" class="form-input" id="parent_last_name" placeholder="Enter last name" required>
+                </div>
+
+                <!-- Email -->
+                <div class="col-md-6">
+                  <label class="form-label-custom" for="email">Parent's Email *</label>
+                  <input name="email" type="email" class="form-input" id="email" placeholder="Enter email address" required>
+                </div>
+
+                <!-- Phone Number -->
+                <div class="col-md-6">
+                  <label class="form-label-custom" for="phone">Parent's Phone Number *</label>
+                  <input name="phone" type="tel" class="form-input" id="phone" placeholder="Enter phone number" required>
+                </div>
+
+                <!-- Program Checkboxes -->
+                <div class="col-12" style="margin-top: 24px;">
+                  <p class="checkbox-group-title"><i class="fas fa-clipboard-list" style="margin-right:8px;color:var(--primary);"></i> Select Program(s) of Interest:</p>
+
+                  <div class="row">
+                    <div class="col-md-6">
+                      <label class="styled-checkbox">
+                        <input type="checkbox" name="programs" value="Lego Club">
+                        <span>Lego Club</span>
+                      </label>
+                      <label class="styled-checkbox">
+                        <input type="checkbox" name="programs" value="Robot and Coding Club">
+                        <span>Robot and Coding Club</span>
+                      </label>
+                      <label class="styled-checkbox">
+                        <input type="checkbox" name="programs" value="Reading and Writing Club">
+                        <span>Reading and Writing Club</span>
+                      </label>
+                      <label class="styled-checkbox">
+                        <input type="checkbox" name="programs" value="Media Arts Club">
+                        <span>Media Arts Club</span>
+                      </label>
+                      <label class="styled-checkbox">
+                        <input type="checkbox" name="programs" value="Sports Club - Golf">
+                        <span>Sports Club - Golf</span>
+                      </label>
+                      <label class="styled-checkbox">
+                        <input type="checkbox" name="programs" value="Sports Club - Running">
+                        <span>Sports Club - Running</span>
+                      </label>
+                    </div>
+                    <div class="col-md-6">
+                      <label class="styled-checkbox">
+                        <input type="checkbox" name="programs" value="Music Club - Guitar">
+                        <span>Music Club - Guitar</span>
+                      </label>
+                      <label class="styled-checkbox">
+                        <input type="checkbox" name="programs" value="Music Club - Ukulele">
+                        <span>Music Club - Ukulele</span>
+                      </label>
+                      <label class="styled-checkbox">
+                        <input type="checkbox" name="programs" value="Music Club - Drums">
+                        <span>Music Club - Drums</span>
+                      </label>
+                      <label class="styled-checkbox">
+                        <input type="checkbox" name="programs" value="Music Club - Digital Music Composition">
+                        <span>Music Club - Digital Music Composition</span>
+                      </label>
+                      <label class="styled-checkbox">
+                        <input type="checkbox" name="programs" value="Media Creator Club">
+                        <span>Media Creator Club</span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Honeypot Spam Protection -->
+                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+                <!-- Additional Information -->
+                <div class="col-12" style="margin-top: 16px;">
+                  <label class="form-label-custom" for="additional_info">Additional Information</label>
+                  <textarea name="Additional Info" class="form-input" id="additional_info" rows="5" placeholder="E.g. allergies, special needs, interests, etc."></textarea>
+                </div>
+
+                <!-- How did you find us Checkboxes -->
+                <div class="col-12" style="margin-top: 24px;">
+                  <p class="checkbox-group-title"><i class="fas fa-search" style="margin-right:8px;color:var(--primary);"></i> How did you find us?</p>
+
+                  <div class="row">
+                    <div class="col-md-6">
+                      <label class="styled-checkbox">
+                        <input type="checkbox" name="found_us" value="Facebook">
+                        <span>Facebook</span>
+                      </label>
+                      <label class="styled-checkbox">
+                        <input type="checkbox" name="found_us" value="Instagram">
+                        <span>Instagram</span>
+                      </label>
+                      <label class="styled-checkbox">
+                        <input type="checkbox" name="found_us" value="Web Ad">
+                        <span>Web Ad</span>
+                      </label>
+                    </div>
+                    <div class="col-md-6">
+                      <label class="styled-checkbox">
+                        <input type="checkbox" name="found_us" value="Google">
+                        <span>Google</span>
+                      </label>
+                      <label class="styled-checkbox">
+                        <input type="checkbox" name="found_us" value="Other">
+                        <span>Other</span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="col-12 text-center" style="margin-top: 32px;">
+                  <button type="submit" class="btn-submit">
+                    <i class="fas fa-paper-plane" style="margin-right:8px;"></i> Register Now
+                  </button>
+                </div>
+
+                <!-- Confirmation Message -->
+                <div class="col-12">
+                  <p id="confirmation-message" style="display: none; color: #2DB87A; text-align: center; font-weight: 600; font-size: 16px; margin-top: 16px;">
+                    <i class="fas fa-check-circle" style="margin-right:6px;"></i> Thank you! We will notify you soon.
+                  </p>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- Map -->
+        <div class="col-lg-4 fade-up">
+          <div style="position:sticky;top:140px;">
+            <div class="register-card" style="padding:30px;margin-bottom:24px;">
+              <h3 style="font-size:20px;font-weight:700;margin-bottom:16px;color:var(--text-dark);"><i class="fas fa-map-marker-alt" style="margin-right:8px;color:var(--accent-cyan);"></i> Visit Us</h3>
+              <div class="map-wrap" style="margin-bottom:20px;">
+                <iframe
+                  src="https://maps.google.com/maps?q=KIDSFORTECH%20Robotics%20and%20Coding%20Education,%20204B,%2010190%20152A%20St,%20Surrey,%20BC%20V3R%201J7&t=&z=14&ie=UTF8&iwloc=B&output=embed"
+                  width="100%"
+                  height="250"
+                  style="border:0;border-radius:var(--radius-sm);"
+                  allowfullscreen
+                  loading="lazy">
+                </iframe>
+              </div>
+              <div style="font-size:14px;color:var(--text-gray);line-height:1.8;">
+                <p style="margin-bottom:12px;"><i class="fas fa-building" style="margin-right:8px;color:var(--accent-cyan);width:16px;text-align:center;"></i> Autism Club Center (powered by KidsForTech)</p>
+                <p style="margin-bottom:12px;"><i class="fas fa-location-dot" style="margin-right:8px;color:var(--accent-cyan);width:16px;text-align:center;"></i> #204B 10190 152A St. Surrey BC V3R 1J7</p>
+                <p style="margin-bottom:12px;"><i class="fas fa-phone" style="margin-right:8px;color:var(--accent-cyan);width:16px;text-align:center;"></i> (778) 955-9968</p>
+                <p style="margin-bottom:0;"><i class="fas fa-envelope" style="margin-right:8px;color:var(--accent-cyan);width:16px;text-align:center;"></i> info@kidsfortech.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       FOOTER
+  ========================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <div class="footer-col">
+            <img src="assets/images/autism-club-logo.png" alt="Autism Club" style="height:60px;margin-bottom:16px;filter:brightness(10);" width="180" height="60">
+            <p>A specialized AI-powered educational institution in Surrey, Greater Vancouver, dedicated to supporting autistic children and young adults to connect with a broader world.</p>
+            <div class="footer-social">
+              <a href="https://www.facebook.com/profile.php?id=61574664762256" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://www.instagram.com/autismclubcanada/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+              <a href="mailto:info@kidsfortech.com"><i class="fas fa-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-2">
+          <div class="footer-col">
+            <h5>Programs</h5>
+            <ul class="footer-links">
+              <li><a href="lego-club.html">Lego Club</a></li>
+              <li><a href="robot-coding-club.html">Robot Coding</a></li>
+              <li><a href="media-arts-club.html">Media Arts</a></li>
+              <li><a href="music-club.html">Music Club</a></li>
+              <li><a href="roblox-game-development-club.html">Roblox Game Dev</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-6 col-lg-2">
+          <div class="footer-col">
+            <h5>Quick Links</h5>
+            <ul class="footer-links">
+              <li><a href="about-us.html">About Us</a></li>
+              <li><a href="event.html">Events</a></li>
+              <li><a href="afu-funding.html">AFU Funding</a></li>
+              <li><a href="register.html">Register</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="footer-col">
+            <h5>Contact Us</h5>
+            <ul class="footer-links">
+              <li><i class="fas fa-map-marker-alt" style="margin-right:8px;color:var(--accent-cyan);"></i> #204B 10190 152A St. Surrey BC V3R 1J7</li>
+              <li><i class="fas fa-phone" style="margin-right:8px;color:var(--accent-cyan);"></i> (778) 955-9968</li>
+              <li><i class="fas fa-envelope" style="margin-right:8px;color:var(--accent-cyan);"></i> info@kidsfortech.com</li>
+              <li><i class="fas fa-clock" style="margin-right:8px;color:var(--accent-cyan);"></i> Mon-Fri: 3:30 PM - 7:30 PM</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2025 Autism Club. All rights reserved. Powered by KidsForTech.
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================
+       SCRIPTS
+  ========================================== -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Sticky header shadow on scroll
+    window.addEventListener('scroll', function() {
+      const header = document.getElementById('siteHeader');
+      if (window.scrollY > 10) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+
+    // Mobile hamburger toggle
+    document.getElementById('hamburgerBtn').addEventListener('click', function() {
+      document.getElementById('mobileNav').classList.toggle('active');
+      const icon = this.querySelector('i');
+      if (icon.classList.contains('fa-bars')) {
+        icon.classList.remove('fa-bars');
+        icon.classList.add('fa-times');
+      } else {
+        icon.classList.remove('fa-times');
+        icon.classList.add('fa-bars');
+      }
+    });
+
+    // Fade-up animation on scroll
+    const fadeElements = document.querySelectorAll('.fade-up');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+    fadeElements.forEach(el => observer.observe(el));
+  </script>
+  <div id="google_translate_element" style="display:none;"></div>
+  <script>
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({
+        pageLanguage: 'en',
+        includedLanguages: 'en,ko,zh-CN,hi,es,fr,ja',
+        autoDisplay: false
+      }, 'google_translate_element');
+    }
+  </script>
+  <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  <script>
+    (function() {
+      var langNames = { 'en': 'EN', 'ko': 'KO', 'zh-CN': 'CN', 'hi': 'HI', 'es': 'ES', 'fr': 'FR', 'ja': 'JA' };
+      var langToggle = document.getElementById('langToggle');
+      var langDropdown = document.getElementById('langDropdown');
+      var langText = document.getElementById('currentLangText');
+
+      function updateLangBtnText(lang) {
+        if (langText) langText.textContent = langNames[lang] || 'English';
+      }
+
+      if (langToggle && langDropdown) {
+        langToggle.addEventListener('click', function(e) {
+          e.stopPropagation();
+          var isOpen = langDropdown.classList.contains('open');
+          langDropdown.classList.toggle('open');
+          langToggle.classList.toggle('active');
+          langToggle.setAttribute('aria-expanded', !isOpen);
+        });
+        document.addEventListener('click', function(e) {
+          if (!langToggle.contains(e.target) && !langDropdown.contains(e.target)) {
+            langDropdown.classList.remove('open');
+            langToggle.classList.remove('active');
+            langToggle.setAttribute('aria-expanded', 'false');
+          }
+        });
+      }
+
+      document.querySelectorAll('[data-lang]').forEach(function(option) {
+        option.addEventListener('click', function(e) {
+          e.preventDefault();
+          var lang = this.getAttribute('data-lang');
+          updateLangBtnText(lang);
+          changeLanguage(lang);
+          document.querySelectorAll('[data-lang]').forEach(function(opt) { opt.classList.remove('active'); });
+          document.querySelectorAll('[data-lang="' + lang + '"]').forEach(function(opt) { opt.classList.add('active'); });
+          if (langDropdown) { langDropdown.classList.remove('open'); langToggle.classList.remove('active'); }
+          var mobileNav = document.getElementById('mobileNav');
+          if (mobileNav && mobileNav.classList.contains('active')) {
+            mobileNav.classList.remove('active');
+            var icon = document.querySelector('#hamburgerBtn i');
+            if (icon) { icon.classList.remove('fa-times'); icon.classList.add('fa-bars'); }
+          }
+        });
+      });
+
+      function changeLanguage(lang) {
+        if (lang === 'en') {
+          document.cookie = 'googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
+          document.cookie = 'googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=.' + window.location.hostname;
+          window.location.reload();
+          return;
+        }
+        document.cookie = 'googtrans=/en/' + lang + '; path=/;';
+        document.cookie = 'googtrans=/en/' + lang + '; path=/; domain=.' + window.location.hostname;
+        var select = document.querySelector('.goog-te-combo');
+        if (select) { select.value = lang; select.dispatchEvent(new Event('change')); } else { window.location.reload(); }
+      }
+
+      (function() {
+        var match = document.cookie.match(/googtrans=\/en\/([^;]+)/);
+        var currentLang = match ? match[1] : 'en';
+        document.querySelectorAll('[data-lang]').forEach(function(opt) { opt.classList.remove('active'); });
+        document.querySelectorAll('[data-lang="' + currentLang + '"]').forEach(function(opt) { opt.classList.add('active'); });
+        updateLangBtnText(currentLang);
+      })();
+    })();
+  </script>
+
+</body>
+</html>
