@@ -97,6 +97,11 @@
 
     * { box-sizing: border-box; margin: 0; padding: 0; }
 
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
     body {
       font-family: 'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
       color: var(--text-dark);
@@ -459,10 +464,12 @@
     }
     .hero-image img {
       width: 100%;
+      height: auto;
       max-width: 520px;
       border-radius: var(--radius-lg);
       box-shadow: 0 20px 60px rgba(27,20,100,0.12);
       filter: brightness(2.0);
+      object-fit: cover;
     }
     /* Floating badges on hero image */
     .hero-float {
@@ -589,7 +596,7 @@
       box-shadow: var(--card-shadow-hover);
     }
     .program-card-img {
-      height: 200px;
+      aspect-ratio: 16 / 10;
       overflow: hidden;
       position: relative;
     }
@@ -738,7 +745,7 @@
       box-shadow: 0 12px 30px rgba(0,0,0,0.2);
     }
     .event-card-img {
-      height: 200px;
+      aspect-ratio: 4 / 3;
       overflow: hidden;
     }
     .event-card-img img {
