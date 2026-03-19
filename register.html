@@ -16,7 +16,9 @@
   <meta property="og:title" content="Register - Autism Club">
   <meta property="og:description" content="Register for Autism Club programs and book a free assessment for your child. Explore STEM, robotics, coding, music, arts, and sports programs for children and adults with autism.">
   <meta property="og:url" content="https://autismclub.ca/register.html">
-  <meta property="og:image" content="https://autismclub.ca/assets/images/autism-club-logo.png">
+  <meta property="og:image" content="https://autismclub.ca/assets/images/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
   <meta property="og:site_name" content="Autism Club Canada">
   <meta property="og:locale" content="en_CA">
 
@@ -24,7 +26,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Register - Autism Club">
   <meta name="twitter:description" content="Register for Autism Club programs and book a free assessment for your child. Explore STEM, robotics, coding, music, arts, and sports programs for children and adults with autism.">
-  <meta name="twitter:image" content="https://autismclub.ca/assets/images/autism-club-logo.png">
+  <meta name="twitter:image" content="https://autismclub.ca/assets/images/og-image.png">
 
   <!-- JSON-LD Structured Data -->
   <script type="application/ld+json">
@@ -68,6 +70,10 @@
       --radius-pill: 50px;
     }
     * { box-sizing: border-box; margin: 0; padding: 0; }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
     body {
       font-family: 'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
       color: var(--text-dark);
@@ -777,13 +783,11 @@
       const confirmationMsg = document.getElementById('confirmation-message');
       const errorMsg = document.getElementById('error-message');
 
-      // Collect checkbox values as comma-separated strings
       const programs = [...form.querySelectorAll('input[name="programs"]:checked')]
         .map(cb => cb.value).join(', ');
       const foundUs = [...form.querySelectorAll('input[name="found_us"]:checked')]
         .map(cb => cb.value).join(', ');
 
-      // Build JSON payload
       const data = {
         access_key: form.querySelector('input[name="access_key"]').value,
         subject: form.querySelector('input[name="subject"]').value,
@@ -801,7 +805,6 @@
         botcheck: form.querySelector('input[name="botcheck"]').checked
       };
 
-      // Loading state
       submitBtn.disabled = true;
       submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin" style="margin-right:8px;"></i> Sending...';
       confirmationMsg.style.display = 'none';
