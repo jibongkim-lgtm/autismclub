@@ -3,4 +3,4 @@ Allow: /
 Disallow: /checkers-game.html
 Disallow: /checkers-icon.html
 
-Sitemap: https://www.autismclubcanada.com/sitemap.xml
+Sitemap: https://autismclub.ca/sitemap.xml
