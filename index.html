@@ -659,6 +659,100 @@
       z-index: 1;
     }
     .promo-cta:hover { background: #E5A000; transform: translateY(-2px); color: #1B1464; }
+    /* AFU Funding Banner Slide */
+    .afu-slide {
+      width: 100%;
+      height: 390px;
+      background: linear-gradient(135deg, #0a5c36 0%, #1a7a4a 45%, #0e9f6e 100%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 32px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .afu-slide::before {
+      content: '';
+      position: absolute;
+      top: -50px; right: -50px;
+      width: 220px; height: 220px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.06);
+    }
+    .afu-slide::after {
+      content: '';
+      position: absolute;
+      bottom: -40px; left: -40px;
+      width: 180px; height: 180px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.05);
+    }
+    .afu-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255,255,255,0.15);
+      border: 1.5px solid rgba(255,255,255,0.4);
+      color: #fff;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      padding: 5px 14px;
+      border-radius: 50px;
+      margin-bottom: 16px;
+      position: relative;
+      z-index: 1;
+    }
+    .afu-title {
+      font-size: 22px;
+      font-weight: 800;
+      color: #fff;
+      line-height: 1.3;
+      margin-bottom: 18px;
+      position: relative;
+      z-index: 1;
+    }
+    .afu-title span { color: #6ee7b7; }
+    .afu-items {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 20px;
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      max-width: 320px;
+    }
+    .afu-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 12px;
+      padding: 10px 16px;
+      text-align: left;
+    }
+    .afu-item i { color: #6ee7b7; font-size: 16px; flex-shrink: 0; }
+    .afu-item span { color: rgba(255,255,255,0.92); font-size: 13px; font-weight: 500; }
+    .afu-cta {
+      display: inline-block;
+      padding: 12px 28px;
+      background: #fff;
+      color: #0a5c36;
+      font-weight: 700;
+      font-size: 14px;
+      border-radius: 50px;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      transition: all 0.3s;
+      position: relative;
+      z-index: 1;
+    }
+    .afu-cta:hover { background: #6ee7b7; color: #0a5c36; transform: translateY(-2px); }
     /* Floating badges on hero image */
     .hero-float {
       position: absolute;
@@ -1613,18 +1707,17 @@
           <div class="hero-image">
             <div class="hero-carousel" id="heroCarousel">
               <div class="hero-carousel-track" id="heroTrack">
-                <!-- CLONE of slide 6 (for infinite loop prev) -->
+                <!-- CLONE of slide 7 (for infinite loop prev) -->
                 <div class="hero-carousel-slide clone">
-                  <div class="promo-slide">
-                    <div class="promo-badge"><i class="fas fa-gift"></i> Limited Time Offer</div>
-                    <div class="promo-title">Register Now &amp; Get<br><span>FREE 2-Hour Care!</span></div>
-                    <div class="promo-cards">
-                      <div class="promo-card-item"><div class="hours">2hrs</div><div class="label">Class<br>Session</div></div>
-                      <div class="promo-plus">+</div>
-                      <div class="promo-card-item"><div class="hours">2hrs</div><div class="label">Free Extended<br>Activity</div></div>
+                  <div class="afu-slide">
+                    <div class="afu-badge"><i class="fas fa-hand-holding-usd"></i> Government Funding</div>
+                    <div class="afu-title">Use Your <span>Autism Funding</span><br>for Our Programs!</div>
+                    <div class="afu-items">
+                      <div class="afu-item"><i class="fas fa-check-circle"></i><span>Authorized Service Provider</span></div>
+                      <div class="afu-item"><i class="fas fa-file-alt"></i><span>RTP Form Assistance Available</span></div>
+                      <div class="afu-item"><i class="fas fa-hands-helping"></i><span>We Guide You Every Step</span></div>
                     </div>
-                    <div class="promo-total">Total <strong>4 hours</strong> of learning &amp; care — at no extra cost</div>
-                    <a href="register.html" class="promo-cta"><i class="fas fa-arrow-right" style="margin-right:6px;"></i> Book Free Assessment</a>
+                    <a href="afu-funding.html" class="afu-cta"><i class="fas fa-arrow-right" style="margin-right:6px;"></i> Learn About AFU Funding</a>
                   </div>
                 </div>
                 <!-- SLIDE 1 -->
@@ -1681,6 +1774,19 @@
                     <a href="register.html" class="promo-cta"><i class="fas fa-arrow-right" style="margin-right:6px;"></i> Book Free Assessment</a>
                   </div>
                 </div>
+                <!-- SLIDE 7: AFU Funding -->
+                <div class="hero-carousel-slide">
+                  <div class="afu-slide">
+                    <div class="afu-badge"><i class="fas fa-hand-holding-usd"></i> Government Funding</div>
+                    <div class="afu-title">Use Your <span>Autism Funding</span><br>for Our Programs!</div>
+                    <div class="afu-items">
+                      <div class="afu-item"><i class="fas fa-check-circle"></i><span>Authorized Service Provider</span></div>
+                      <div class="afu-item"><i class="fas fa-file-alt"></i><span>RTP Form Assistance Available</span></div>
+                      <div class="afu-item"><i class="fas fa-hands-helping"></i><span>We Guide You Every Step</span></div>
+                    </div>
+                    <a href="afu-funding.html" class="afu-cta"><i class="fas fa-arrow-right" style="margin-right:6px;"></i> Learn About AFU Funding</a>
+                  </div>
+                </div>
                 <!-- CLONE of slide 1 (for infinite loop next) -->
                 <div class="hero-carousel-slide clone">
                   <img src="assets/images/main-slider-01.jpg" alt="Children learning with AI technology" width="520" height="390" loading="lazy">
@@ -1699,6 +1805,7 @@
                 <button class="hero-carousel-dot" aria-label="Slide 4"></button>
                 <button class="hero-carousel-dot" aria-label="Slide 5"></button>
                 <button class="hero-carousel-dot" aria-label="Slide 6"></button>
+                <button class="hero-carousel-dot" aria-label="Slide 7"></button>
               </div>
             </div>
             <div class="hero-float top-right">
@@ -2365,7 +2472,7 @@
     (function() {
       const track = document.getElementById('heroTrack');
       const dots = document.querySelectorAll('#heroDots .hero-carousel-dot');
-      const TOTAL = 6;       // real slides
+      const TOTAL = 7;       // real slides
       let pos = 1;           // starts at real slide 1 (index 1 in track, 0=clone-last)
       let isTransitioning = false;
       let timer;
