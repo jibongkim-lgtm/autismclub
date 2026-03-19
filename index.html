@@ -544,6 +544,121 @@
       width: 22px;
       border-radius: 4px;
     }
+    /* Promo Banner Slide */
+    .promo-slide {
+      width: 100%;
+      height: 390px;
+      background: linear-gradient(135deg, #1B1464 0%, #2D2B8E 40%, #0099CC 100%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 36px 32px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .promo-slide::before {
+      content: '';
+      position: absolute;
+      top: -60px; right: -60px;
+      width: 240px; height: 240px;
+      border-radius: 50%;
+      background: rgba(0,212,255,0.12);
+    }
+    .promo-slide::after {
+      content: '';
+      position: absolute;
+      bottom: -40px; left: -40px;
+      width: 180px; height: 180px;
+      border-radius: 50%;
+      background: rgba(255,178,0,0.1);
+    }
+    .promo-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255,178,0,0.2);
+      border: 1.5px solid #FFB200;
+      color: #FFB200;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      padding: 6px 16px;
+      border-radius: 50px;
+      margin-bottom: 20px;
+      position: relative;
+      z-index: 1;
+    }
+    .promo-title {
+      font-size: 26px;
+      font-weight: 800;
+      color: #fff;
+      line-height: 1.3;
+      margin-bottom: 20px;
+      position: relative;
+      z-index: 1;
+    }
+    .promo-title span { color: #00D4FF; }
+    .promo-cards {
+      display: flex;
+      gap: 14px;
+      margin-bottom: 24px;
+      position: relative;
+      z-index: 1;
+    }
+    .promo-card-item {
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.2);
+      border-radius: 16px;
+      padding: 16px 20px;
+      text-align: center;
+      backdrop-filter: blur(6px);
+      min-width: 110px;
+    }
+    .promo-card-item .hours {
+      font-size: 28px;
+      font-weight: 800;
+      color: #FFB200;
+      line-height: 1;
+    }
+    .promo-card-item .label {
+      font-size: 12px;
+      color: rgba(255,255,255,0.8);
+      margin-top: 4px;
+      font-weight: 500;
+    }
+    .promo-plus {
+      font-size: 22px;
+      font-weight: 700;
+      color: rgba(255,255,255,0.5);
+      align-self: center;
+    }
+    .promo-total {
+      font-size: 13px;
+      color: rgba(255,255,255,0.7);
+      margin-bottom: 20px;
+      position: relative;
+      z-index: 1;
+    }
+    .promo-total strong { color: #fff; }
+    .promo-cta {
+      display: inline-block;
+      padding: 12px 28px;
+      background: #FFB200;
+      color: #1B1464;
+      font-weight: 700;
+      font-size: 14px;
+      border-radius: 50px;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      transition: all 0.3s;
+      position: relative;
+      z-index: 1;
+    }
+    .promo-cta:hover { background: #E5A000; transform: translateY(-2px); color: #1B1464; }
     /* Floating badges on hero image */
     .hero-float {
       position: absolute;
@@ -1498,14 +1613,77 @@
           <div class="hero-image">
             <div class="hero-carousel" id="heroCarousel">
               <div class="hero-carousel-track" id="heroTrack">
+                <!-- CLONE of slide 6 (for infinite loop prev) -->
+                <div class="hero-carousel-slide clone">
+                  <div class="promo-slide">
+                    <div class="promo-badge"><i class="fas fa-gift"></i> Limited Time Offer</div>
+                    <div class="promo-title">Register Now &amp; Get<br><span>FREE 2-Hour Care!</span></div>
+                    <div class="promo-cards">
+                      <div class="promo-card-item"><div class="hours">2hrs</div><div class="label">Class<br>Session</div></div>
+                      <div class="promo-plus">+</div>
+                      <div class="promo-card-item"><div class="hours">2hrs</div><div class="label">Free Extended<br>Activity</div></div>
+                    </div>
+                    <div class="promo-total">Total <strong>4 hours</strong> of learning &amp; care — at no extra cost</div>
+                    <a href="register.html" class="promo-cta"><i class="fas fa-arrow-right" style="margin-right:6px;"></i> Book Free Assessment</a>
+                  </div>
+                </div>
+                <!-- SLIDE 1 -->
                 <div class="hero-carousel-slide">
                   <img src="assets/images/main-slider-01.jpg" alt="Children learning with AI technology" width="520" height="390" loading="eager">
                 </div>
+                <!-- SLIDE 2 -->
+                <div class="hero-carousel-slide">
+                  <div class="promo-slide">
+                    <div class="promo-badge"><i class="fas fa-gift"></i> Limited Time Offer</div>
+                    <div class="promo-title">Register Now &amp; Get<br><span>FREE 2-Hour Care!</span></div>
+                    <div class="promo-cards">
+                      <div class="promo-card-item"><div class="hours">2hrs</div><div class="label">Class<br>Session</div></div>
+                      <div class="promo-plus">+</div>
+                      <div class="promo-card-item"><div class="hours">2hrs</div><div class="label">Free Extended<br>Activity</div></div>
+                    </div>
+                    <div class="promo-total">Total <strong>4 hours</strong> of learning &amp; care — at no extra cost</div>
+                    <a href="register.html" class="promo-cta"><i class="fas fa-arrow-right" style="margin-right:6px;"></i> Book Free Assessment</a>
+                  </div>
+                </div>
+                <!-- SLIDE 3 -->
                 <div class="hero-carousel-slide">
                   <img src="assets/images/main-slider-02.jpg" alt="Youth robotics coding program" width="520" height="390" loading="lazy">
                 </div>
+                <!-- SLIDE 4 -->
+                <div class="hero-carousel-slide">
+                  <div class="promo-slide">
+                    <div class="promo-badge"><i class="fas fa-gift"></i> Limited Time Offer</div>
+                    <div class="promo-title">Register Now &amp; Get<br><span>FREE 2-Hour Care!</span></div>
+                    <div class="promo-cards">
+                      <div class="promo-card-item"><div class="hours">2hrs</div><div class="label">Class<br>Session</div></div>
+                      <div class="promo-plus">+</div>
+                      <div class="promo-card-item"><div class="hours">2hrs</div><div class="label">Free Extended<br>Activity</div></div>
+                    </div>
+                    <div class="promo-total">Total <strong>4 hours</strong> of learning &amp; care — at no extra cost</div>
+                    <a href="register.html" class="promo-cta"><i class="fas fa-arrow-right" style="margin-right:6px;"></i> Book Free Assessment</a>
+                  </div>
+                </div>
+                <!-- SLIDE 5 -->
                 <div class="hero-carousel-slide">
                   <img src="assets/images/main-slider-03.jpg" alt="Adult AI education program" width="520" height="390" loading="lazy">
+                </div>
+                <!-- SLIDE 6 -->
+                <div class="hero-carousel-slide">
+                  <div class="promo-slide">
+                    <div class="promo-badge"><i class="fas fa-gift"></i> Limited Time Offer</div>
+                    <div class="promo-title">Register Now &amp; Get<br><span>FREE 2-Hour Care!</span></div>
+                    <div class="promo-cards">
+                      <div class="promo-card-item"><div class="hours">2hrs</div><div class="label">Class<br>Session</div></div>
+                      <div class="promo-plus">+</div>
+                      <div class="promo-card-item"><div class="hours">2hrs</div><div class="label">Free Extended<br>Activity</div></div>
+                    </div>
+                    <div class="promo-total">Total <strong>4 hours</strong> of learning &amp; care — at no extra cost</div>
+                    <a href="register.html" class="promo-cta"><i class="fas fa-arrow-right" style="margin-right:6px;"></i> Book Free Assessment</a>
+                  </div>
+                </div>
+                <!-- CLONE of slide 1 (for infinite loop next) -->
+                <div class="hero-carousel-slide clone">
+                  <img src="assets/images/main-slider-01.jpg" alt="Children learning with AI technology" width="520" height="390" loading="lazy">
                 </div>
               </div>
               <button class="hero-carousel-btn prev" id="heroPrev" aria-label="Previous slide">
@@ -1518,6 +1696,9 @@
                 <button class="hero-carousel-dot active" aria-label="Slide 1"></button>
                 <button class="hero-carousel-dot" aria-label="Slide 2"></button>
                 <button class="hero-carousel-dot" aria-label="Slide 3"></button>
+                <button class="hero-carousel-dot" aria-label="Slide 4"></button>
+                <button class="hero-carousel-dot" aria-label="Slide 5"></button>
+                <button class="hero-carousel-dot" aria-label="Slide 6"></button>
               </div>
             </div>
             <div class="hero-float top-right">
@@ -2180,30 +2361,70 @@
     }, { threshold: 0.1 });
     fadeElements.forEach(el => observer.observe(el));
 
-    // Hero Carousel
+    // Hero Carousel (Infinite Loop)
     (function() {
       const track = document.getElementById('heroTrack');
       const dots = document.querySelectorAll('#heroDots .hero-carousel-dot');
-      const total = 3;
-      let current = 0;
+      const TOTAL = 6;       // real slides
+      let pos = 1;           // starts at real slide 1 (index 1 in track, 0=clone-last)
+      let isTransitioning = false;
       let timer;
 
-      function goTo(index) {
-        current = (index + total) % total;
-        track.style.transform = `translateX(-${current * 100}%)`;
-        dots.forEach((d, i) => d.classList.toggle('active', i === current));
+      function updateDots(realIndex) {
+        dots.forEach((d, i) => d.classList.toggle('active', i === realIndex));
       }
 
-      function next() { goTo(current + 1); }
-      function prev() { goTo(current - 1); }
+      function moveTo(index, animate) {
+        track.style.transition = animate ? 'transform 0.6s cubic-bezier(0.4,0,0.2,1)' : 'none';
+        track.style.transform = `translateX(-${index * 100}%)`;
+      }
+
+      function next() {
+        if (isTransitioning) return;
+        isTransitioning = true;
+        pos++;
+        moveTo(pos, true);
+        updateDots((pos - 1) % TOTAL);
+      }
+
+      function prev() {
+        if (isTransitioning) return;
+        isTransitioning = true;
+        pos--;
+        moveTo(pos, true);
+        updateDots(pos === 0 ? TOTAL - 1 : pos - 1);
+      }
+
+      track.addEventListener('transitionend', () => {
+        // jumped past last clone → snap to real slide 1
+        if (pos === TOTAL + 1) {
+          pos = 1;
+          moveTo(pos, false);
+          updateDots(0);
+        }
+        // jumped before first clone → snap to real slide 6
+        if (pos === 0) {
+          pos = TOTAL;
+          moveTo(pos, false);
+          updateDots(TOTAL - 1);
+        }
+        isTransitioning = false;
+      });
 
       function startTimer() { timer = setInterval(next, 4000); }
       function resetTimer() { clearInterval(timer); startTimer(); }
 
       document.getElementById('heroNext').addEventListener('click', () => { next(); resetTimer(); });
       document.getElementById('heroPrev').addEventListener('click', () => { prev(); resetTimer(); });
-      dots.forEach((dot, i) => dot.addEventListener('click', () => { goTo(i); resetTimer(); }));
+      dots.forEach((dot, i) => dot.addEventListener('click', () => {
+        if (isTransitioning) return;
+        pos = i + 1;
+        moveTo(pos, true);
+        updateDots(i);
+        resetTimer();
+      }));
 
+      moveTo(pos, false);
       startTimer();
     })();
 
