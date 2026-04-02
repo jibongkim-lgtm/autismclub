@@ -452,8 +452,9 @@
             <form id="registrationForm">
               <!-- Web3Forms Access Key -->
               <input type="hidden" name="access_key" value="73609ca0-9dc5-4d0c-b4ff-a8fdd218f922">
-              <input type="hidden" name="subject" value="New Program Registration - Autism Club">
-              <input type="hidden" name="from_name" value="Autism Club Registration">
+              <input type="hidden" name="ccemail" value="scavengerhuntgo@gmail.com">
+              <input type="hidden" name="subject" value="New Program Registration - Autism Club Castlegar">
+              <input type="hidden" name="from_name" value="Autism Club Castlegar Registration">
 
               <div class="row g-3">
                 <!-- Child First & Last Name -->
@@ -730,6 +731,7 @@
 
       const data = {
         access_key: form.querySelector('input[name="access_key"]').value,
+        ccemail: form.querySelector('input[name="ccemail"]').value,
         subject: form.querySelector('input[name="subject"]').value,
         from_name: form.querySelector('input[name="from_name"]').value,
         first_name: form.querySelector('#first_name').value,
