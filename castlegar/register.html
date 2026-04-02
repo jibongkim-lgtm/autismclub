@@ -759,6 +759,14 @@
         const result = await response.json();
 
         if (result.success) {
+          // Also send to scavengerhuntgo@gmail.com (Castlegar coordinator)
+          const data2 = Object.assign({}, data, { access_key: '369ee6df-06c8-4260-a222-c406fca13dd5' });
+          fetch('https://api.web3forms.com/submit', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+            body: JSON.stringify(data2)
+          }).catch(function() {});
+
           confirmationMsg.style.display = 'block';
           form.reset();
           confirmationMsg.scrollIntoView({ behavior: 'smooth', block: 'center' });
